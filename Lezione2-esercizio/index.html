@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."
+    />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/Lezione2-esercizio/assets/img/logo.svg"
+        alt="logo Epicode"
+        width="250px"
+      />
+      <p>Epicode - Il blog dei developers</p>
+      <nav>
+        <ul>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">Articoli</a></li>
+          <li><a href="javascript:void(0)">Job</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>Come creare un template per i post</h2>
+        <p>di Marcello Mercanzin - pubblicato il 23 gennaio 2024.</p>
+        <p>
+          La prima cosa da fare è suddividere in blocchi logici la pagina,
+          identificando le <strong>parti comuni</strong> da applicare a tutte le
+          pagine.
+        </p>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione del tag <code>&ltheader&gt</code></li>
+          <li>
+            Contenuti centrali variabili del tag
+            <code>&ltmain&gt</code> (corpo principale)
+          </li>
+          <li>
+            Contenuti di fine pagina comuni, da inserire nel tag
+            <code>&ltfooter&gt</code>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Formattazione del codice</h2>
+        <article>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da <strong>selezionare con i CSS</strong>. Perciò i
+            passi saranno:
+          </p>
+          <ol>
+            <li>
+              Progettare su carta il markup finale, assegnando ad ogni specifico
+              testo il tag appropriato
+            </li>
+            <li>
+              Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+        </article>
+        <article>
+          <p>
+            L'applicazione di stili CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressoché totale.
+          </p>
+          <table>
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto browsers</th>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>20%</td>
+              <td>17%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>45%</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>80%</td>
+              <td>51%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>100%</td>
+              <td>76%</td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <p>
+            Un test di validazione può essere fatto tramite il
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank"
+              >tool online</a
+            >
+            dedicato allo scopo. Una volta ottimizzato il tutto, avremo
+            raggiunto il nostro obiettivo e saremo stati dei veri developers
+            come loro:
+          </p>
+          <iframe
+            width="300"
+            height="300"
+            src="https://www.youtube.com/embed/dvOvHXruEDM?si=n8aeU25dfcFcbD0X"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+      <section>
+        <h2>Novità</h2>
+        <p>
+          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+          nostra newsletter:
+        </p>
+        <form onsubmit="alert('Iscrizione effettuata!')">
+          <fieldset>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Inserisci l'email"
+              required
+            />
+            <button type="submit" value="Submit">Iscriviti!</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <aside>
+      <h2>Articoli correlati</h2>
+      <article>
+        <a href="javascript:void(0)">Validare il codice HTML</a>
+        <p>Categoria: develop</p>
+        <p>Data: 03/01/2024</p>
+      </article>
+      <article>
+        <a href="javascript:void(0)">Correggere la sintassi</a>
+        <p>Categoria: develop</p>
+        <p>Data: 06/01/2024</p>
+      </article>
+      <article>
+        <a href="javascript:void(0)">Meno Kb nella pagina</a>
+        <p>Categoria: ottimizzazione</p>
+        <p>Data: 15/01/2024</p>
+      </article>
+    </aside>
+    <hr />
+    <footer>
+      <p>Blog Epicode &copy2024</p>
+      <address>
+        Testata online di Marcello Mercanzin, reg. con prot. n. 213/2022 - via
+        Aldo rossi 8 - Milano. P. IVA 034837848.
+        <a href="mailto:info@epicode.school">info@epicode.school</a>
+      </address>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+<header>
+
+Img logo 
+Title, forse un <p>
+
+<nav>
+<ul>
+<a>
+</ul>
+</nav>
+
+
+<header>
+
+<hr>——————————
+
+
+<main>
+
+<section>
+<h2>
+<p>
+<p>
+<ul>
+
+</section>
+
+<section>
+<h2>
+<p>
+<ol>
+
+<p>
+
+<table>
+
+
+<p>
+
+<video>
+
+<section>
+H2
+<p>
+
+Input 
+
+
+</main>
+
+<aside>
+H2
+Section/article
+</aside>
+
+<hr>——————————
+
+
+<footer>
+<p>
+<address>
+Cosa tipo mail
+</address>
+</footer> -->
