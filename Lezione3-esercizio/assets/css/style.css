@@ -47,6 +47,7 @@ main {
 }
 .main-image img {
   width: 100%;
+  box-shadow: 2px 2px black;
 }
 
 .main-image figcaption {
@@ -89,9 +90,6 @@ main {
 
 #method {
   margin-top: 0;
-}
-.without-number {
-  list-style-type: none;
 }
 
 ul {
