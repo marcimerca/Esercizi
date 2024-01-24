@@ -47,6 +47,7 @@ main {
 }
 .main-image img {
   width: 100%;
+  box-shadow: 5px 5px 10px grey;
 }
 
 .main-image figcaption {
