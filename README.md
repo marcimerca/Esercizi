@@ -7,3 +7,5 @@
 -  Creare un layout di pagina per i post di un blog
 ### LEZIONE 3
 -  Ricreare un layout partendo da un mockup
+### LEZIONE 4
+-  Creare il layout di un articolo e lo stile avanzato con i CSS
