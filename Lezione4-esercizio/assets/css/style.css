@@ -47,6 +47,7 @@ nav ul li::before {
   content: "★";
   color: white;
   font-size: 8px;
+  vertical-align: middle;
 }
 /* MAIN */
 
