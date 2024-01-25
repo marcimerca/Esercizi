@@ -1,11 +1,8 @@
 /* IMPOSTAZIONI GENERALI */
-html {
-  padding: 16px;
-}
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -116,13 +113,9 @@ table tr td {
 tr:nth-child(even) {
   background-color: lightgrey;
 }
-s p a {
-  color: #527bcf;
-}
 
 iframe {
   padding: 0;
-  margin: 0 auto;
   border-radius: 12px;
 }
 /* FORM */
@@ -132,15 +125,15 @@ iframe {
   padding: 1em;
 }
 
-.news p {
+.news-left {
   text-align: left;
 }
-
 form button {
   background-color: #527bcf;
   color: white;
   padding: 4px;
 }
+
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
