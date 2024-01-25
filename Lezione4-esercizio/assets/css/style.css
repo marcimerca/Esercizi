@@ -1,0 +1,126 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  padding: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: url(../img/sfondo.png);
+  background-size: contain;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 1.2em;
+  margin: 0 auto;
+  background-image: linear-gradient(#009cc1, #017388);
+  box-shadow: 1px 1px 10px black;
+  margin-bottom: 20px;
+}
+
+header img {
+  margin-bottom: 20px;
+}
+header p,
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: smaller;
+}
+header p {
+  margin-bottom: 25px;
+  font-size: smaller;
+}
+
+nav ul {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+nav ul li::before {
+  content: "★";
+  color: white;
+  font-size: 8px;
+}
+/* MAIN */
+
+main {
+  text-align: left;
+  background-color: white;
+  box-shadow: 1px 1px 10px black;
+  padding: 1em;
+}
+
+main section h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.subtitle {
+  color: #aaaaaa;
+}
+.subtitle span {
+  font-size: 16px;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+b,
+strong {
+  color: #aa387f;
+}
+
+code {
+  border: 0.5px solid black;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+article ul,
+article ol {
+  line-height: 2em;
+}
+
+/* TABELLE */
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-bottom: 2px solid #527bcf;
+}
+table caption {
+  font-style: italic;
+  font-weight: 600;
+}
+table th {
+  background-color: #527bcf;
+  color: white;
+  font-weight: 300;
+  padding: 1em;
+}
+
+table tr td {
+  padding: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+s p a {
+  color: #527bcf;
+}
+
+iframe {
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
