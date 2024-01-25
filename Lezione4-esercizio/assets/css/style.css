@@ -33,6 +33,9 @@ header nav ul li a {
   text-decoration: none;
   font-size: smaller;
 }
+header nav ul li a:hover {
+  color: red;
+}
 header p {
   margin-bottom: 25px;
   font-size: smaller;
@@ -49,6 +52,7 @@ nav ul li::before {
   font-size: 8px;
   vertical-align: middle;
 }
+
 /* MAIN */
 
 main {
@@ -123,6 +127,20 @@ iframe {
 }
 /* FORM */
 
+.news {
+  background-color: lightgrey;
+  padding: 1em;
+}
+
+.news p {
+  text-align: left;
+}
+
+form button {
+  background-color: #527bcf;
+  color: white;
+  padding: 4px;
+}
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
