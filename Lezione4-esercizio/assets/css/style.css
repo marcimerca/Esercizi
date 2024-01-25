@@ -44,9 +44,11 @@ nav ul {
 }
 
 nav ul li::before {
-  content: "★";
+  content: "\22c6\0020
+";
+  font-size: 30px;
   color: white;
-  font-size: 8px;
+
   vertical-align: middle;
 }
 
@@ -82,12 +84,17 @@ code {
   border-radius: 5px;
   background-color: lightgrey;
 }
-
+article {
+  text-align: center;
+}
 article ul,
 article ol {
   line-height: 2em;
+  text-align: left;
 }
-
+article p {
+  text-align: left;
+}
 /* TABELLE */
 
 table {
@@ -113,10 +120,8 @@ table tr td {
 tr:nth-child(even) {
   background-color: lightgrey;
 }
-
 iframe {
-  padding: 0;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 /* FORM */
 
