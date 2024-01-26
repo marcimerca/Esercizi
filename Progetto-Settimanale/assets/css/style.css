@@ -16,11 +16,13 @@ header {
 header img {
   padding: 38px;
 }
-header section {
+main {
+  padding: 0;
+}
+.introduzione {
   background-image: url(../images/banner.jpg);
   background-size: cover;
   background-position: center;
-  padding: 38px;
 }
 
 h1 {
@@ -43,7 +45,14 @@ h6 {
 p {
   color: #3c4449;
 }
-header section p {
+
+/*MAIN*/
+
+main {
+  padding: 0;
+  margin-bottom: 5rem;
+}
+main .introduzione p {
   line-height: 2;
   font-size: 1.5rem;
   margin: 0;
@@ -51,7 +60,11 @@ header section p {
   color: #3c4449;
 }
 
-header section a {
+main .introduzione {
+  padding: 38px;
+  margin-bottom: 4rem;
+}
+main .introduzione a {
   background-color: #f04c2f;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -61,15 +74,14 @@ header section a {
   border-radius: 5px;
 }
 
-/*MAIN*/
-main {
-  padding: 38px;
+main section {
+  padding: 0 2rem;
 }
-main h2 {
+main section h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-main p {
+main section p {
   line-height: 2;
   font-size: 1.5rem;
   margin: 0;
@@ -79,7 +91,7 @@ main figure {
   margin-bottom: 1.5rem;
 }
 main figure img {
-  width: 100%;
+  width: 85%;
   border-radius: 50%;
 }
 
@@ -115,7 +127,7 @@ blockquote p {
 
 .scheda {
   padding-bottom: 2rem;
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
   border: 1px solid #dee1e3;
   border-radius: 5px;
@@ -139,6 +151,7 @@ blockquote p {
 footer {
   background-color: #25a2c3;
   color: white;
+  padding: 1rem;
 }
 
 footer h2 {
@@ -162,6 +175,7 @@ address i {
 
 address ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .indirizzo {
