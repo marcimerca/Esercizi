@@ -9,3 +9,5 @@
 -  Ricreare un layout partendo da un mockup
 ### LEZIONE 4
 -  Creare il layout di un articolo e lo stile avanzato con i CSS
+## SETTIMANA 1 - PROGETTO
+- Layout completo HTML + CSS 
