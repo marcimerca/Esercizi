@@ -13,23 +13,14 @@ body {
 header {
   background-color: black;
 }
-header img {
-  padding: 38px;
+header nav img {
+  padding: 2.4rem;
 }
+
+/*Main*/
+
 main {
-  padding: 0;
-}
-.introduzione {
-  background-image: url(../images/banner.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.introduzione h1 {
-  font-size: 2.8rem;
-  line-height: 1;
-
-  margin-bottom: 0.5em;
+  margin-bottom: 5rem;
 }
 
 h1,
@@ -43,26 +34,33 @@ h6 {
   font-weight: bold;
   line-height: 1.5;
 }
+.introduzione {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.introduzione h1 {
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
 p {
   color: #3c4449;
-}
-
-/*MAIN*/
-
-main {
-  padding: 0;
-  margin-bottom: 5rem;
-}
-main .introduzione p {
   line-height: 1.7;
   font-size: 1.5rem;
-  margin: 0;
-  margin-bottom: 3rem;
-  color: #3c4449;
 }
 
+main .introduzione p {
+  margin-bottom: 3rem;
+}
+
+main section {
+  padding: 0 2.4rem;
+}
 main .introduzione {
-  padding: 38px;
+  padding-bottom: 3.5rem;
   margin-bottom: 4rem;
 }
 main .introduzione a {
@@ -75,18 +73,9 @@ main .introduzione a {
   border-radius: 5px;
 }
 
-main section {
-  padding: 0 2rem;
-}
 main section h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
-main section p {
-  line-height: 1.7;
-  font-size: 1.5rem;
-  margin: 0;
-  font-weight: 400;
 }
 
 .prima-immagine {
@@ -127,8 +116,6 @@ blockquote p {
 .author {
   font-size: 1.6rem;
 }
-
-/*nuovo aside*/
 
 .scheda {
   padding-bottom: 2rem;
@@ -194,4 +181,5 @@ hr {
 
 footer address p {
   color: #caeded;
+  font-size: 1rem;
 }
