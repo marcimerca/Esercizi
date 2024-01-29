@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../Lezione1-s2-esercizio/assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Esercizi JS</title>
 </head>
+
 <body>
   <main>
     <p>
@@ -21,13 +23,14 @@
       possono essere di vario tipo:
     <ul>
       <li>stringa: si usa di solito per le parole e le frasi. Si indicano fra " ". Es:
-        <code>const nome = "Marcello";</code> <br> <code>const frasePreferita = "Nel blu dipinto di blu";</code>
+        <code>const nome = "Marcello";</code><code>const frasePreferita = "Nel blu dipinto di blu";</code>
       </li>
-      <li>numero: si usa per i numeri. Es: const numero = 4; const numero2 = 9.8;</li>
-      <li>boolean: può avere valore true(vero) oppure valore false(falso). Es: const sonoAlto = true; const sonoViola =
-        false;</li>
-      <li> null: è come se nella scatola non mettessi nessun gioco, e voglio proprio che non ci sia niente. Es: const
-        scatola = null;</li>
+      <li>numero: si usa per i numeri. Es: <code>const numero = 4;</code> <code>const numero2 = 9.8;</code></li>
+      <li>boolean: può avere valore true(vero) oppure valore false(falso). Es: <code>const sonoAlto = true;</code>
+        <code>const sonoViola =
+        false;</code></li>
+      <li> null: è come se nella scatola non mettessi nessun gioco, e voglio proprio che non ci sia niente. Es: <code>const
+        scatola = null;</code></li>
       <li>undefined: è come se nella scatola dei giochi ora non ci fosse niente, però è la scatola è pronta, se voglio,
         per ricevere dei giochi. Es: let scatola; (ora la scatola è vuota) --- let scatola = "Piena di giochi"; (ora la
         scatola non è più undefined)</li>
@@ -40,7 +43,7 @@
     </p>
     <code>let myName = "Marcello";</code><code>console.log(myName);</code>
     <p class="consegna">Nella console si vedrà:</p>
-    <code id="esercizio2"><code>
+    <code id="esercizio2"></code>
     <h2>Esercizio 3</h2>
     <p class="consegna">
       Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -52,8 +55,53 @@
     <p class="consegna">
       Crea una variable di nome "x" e assegna ad essa il numero 12.
     </p>
-    <code>console.log(12 + 20);</code>
+    <code>let x = 12;
+</code><code>console.log(x);</code>
+    <p class="consegna">Nella console si vedrà:</p>
+    <code id="esercizio4"></code> 
+
+<h2>Esercizio 5</h2>
+  <p class="consegna">
+    Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
+    Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
+  </p>
+  <code>myName = "Mercanzin";</code>
+  <code>console.log(myName)</code>
+   <p class="consegna">Nella console si vedrà:</p>
+   <code></code>
+  <code id="esercizio5a"></code> <br>
+ <hr>
+  <code>const myAge = 27</code>
+  <code>myAge = 18</code>
+
+  <p class="consegna">Nella console si vedrà:</p>
+  <code>Uncaught TypeError: Assignment to constant variable.</code>
+
+  <h2>Esercizio 6</h2>
+  <p class="consegna">
+   Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12)
+  </p>
+  <code>console.log(4 - x);</code>
+   <p class="consegna">Nella console si vedrà:</p>
+   <code id="esercizio6"></code>
+<h2>Esercizio 7</h2>
+  <p class="consegna">
+   Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
+ Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
+ EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
+  </p>
+  <code>let name1 = "john";</code>
+  <code>let name2 = "John";</code>
+  <code>console.log(name1 !== name2);</code>
+   <p class="consegna">Nella console si vedrà:</p>
+   <code id="esercizio7a"></code>
+   <hr>
+   <code>console.log(name1 !== name2.toLowerCase())</code>
+     <p class="consegna">Nella console si vedrà:</p>
+     <code id="esercizio7b"></code>
+
   </main>
+  
   <script src="assets/D1.js"></script>
 </body>
 

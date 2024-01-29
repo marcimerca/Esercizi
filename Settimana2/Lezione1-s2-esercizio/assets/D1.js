@@ -34,9 +34,8 @@ document.getElementById("esercizio2").innerHTML = myName;
 console.log(12 + 20);
 let number1 = 12;
 let number2 = 20;
-let somma = number1 + number2;
 
-document.getElementById("esercizio3").innerHTML = somma;
+document.getElementById("esercizio3").innerHTML = number1 + number2;
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -45,12 +44,15 @@ document.getElementById("esercizio3").innerHTML = somma;
 let x = 12;
 console.log(x);
 
+document.getElementById("esercizio4").innerHTML = x;
+
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
 myName = "Mercanzin";
+document.getElementById("esercizio5a").innerHTML = myName;
 console.log(myName);
 
 const myAge = 27;
@@ -62,6 +64,7 @@ console.log(myAge);
 */
 
 console.log(4 - x);
+document.getElementById("esercizio6").innerHTML = 4 - x;
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -73,5 +76,8 @@ let name1 = "john";
 let name2 = "John";
 
 console.log(name1 !== name2);
+document.getElementById("esercizio7a").innerHTML = name1 !== name2;
 
-console.log(name1 === name2.toLowerCase());
+console.log(name1 !== name2.toLowerCase());
+document.getElementById("esercizio7b").innerHTML =
+  name1 !== name2.toLocaleLowerCase();
