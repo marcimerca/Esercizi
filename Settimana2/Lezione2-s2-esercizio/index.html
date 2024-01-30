@@ -131,15 +131,14 @@ if (totalShoppingCart > 50) {
       </p>
       <code>
         <pre class="scheda-esercizio">
-let totalShoppingCart = 52;
-let costoSpedizione = 10;
-
 if (totalShoppingCart * 0.8 > 50) {
-  document.getElementById("esercizio5").innerHTML =
-    "Il totale da pagare è " + totalShoppingCart + " euro.";
+  document.getElementById("esercizio6").innerHTML =
+    "Il totale da pagare è " + totalShoppingCart * 0.8 + " euro.";
 } else {
-  document.getElementById("esercizio5").innerHTML =
-    "Il totale da pagare è " + (totalShoppingCart + costoSpedizione) + " euro.";
+  document.getElementById("esercizio6").innerHTML =
+    "Il totale da pagare è " +
+    (totalShoppingCart * 0.8 + costoSpedizione) +
+    " euro.";
 }
 </pre
         >

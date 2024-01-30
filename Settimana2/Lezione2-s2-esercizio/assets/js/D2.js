@@ -85,10 +85,12 @@ if (totalShoppingCart > 50) {
 
 if (totalShoppingCart * 0.8 > 50) {
   document.getElementById("esercizio6").innerHTML =
-    "Il totale da pagare è " + totalShoppingCart + " euro.";
+    "Il totale da pagare è " + totalShoppingCart * 0.8 + " euro.";
 } else {
   document.getElementById("esercizio6").innerHTML =
-    "Il totale da pagare è " + (totalShoppingCart + costoSpedizione) + " euro.";
+    "Il totale da pagare è " +
+    (totalShoppingCart * 0.8 + costoSpedizione) +
+    " euro.";
 }
 
 /* ESERCIZIO 7
