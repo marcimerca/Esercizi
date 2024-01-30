@@ -36,6 +36,9 @@ let numeroA = 10;
 if (numeroA % 5 === 0) {
   document.getElementById("esercizio3").innerHTML =
     "Il numero " + numeroA + " è divisibile per 5.";
+} else {
+  document.getElementById("esercizio3").innerHTML =
+    "Il numero " + numeroA + " non è divisibile per 5.";
 }
 
 /* ESERCIZIO 4
