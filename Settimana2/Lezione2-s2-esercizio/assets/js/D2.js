@@ -20,7 +20,7 @@ if (numero1 > numero2) {
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-let numIntero = 5;
+let numIntero = 7;
 
 if (numIntero !== 5) {
   document.getElementById("esercizio2").innerHTML = "not equal";
