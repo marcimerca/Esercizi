@@ -45,10 +45,11 @@ if (numeroA % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let numeroB = 4;
-let numeroC = 12;
+let numeroB = 1;
+let numeroC = 8;
 if (
-  (numeroB || numeroC) === 8 ||
+  numeroB === 8 ||
+  numeroC === 8 ||
   numeroB + numeroC === 8 ||
   numeroB - numeroC === 8 ||
   numeroC - numeroB === 8
