@@ -16,12 +16,17 @@
       <code>
         <pre class="scheda-esercizio">
 let numero1 = 10;
-let numero2 = 14; 
+let numero2 = 10;
 
 if (numero1 > numero2) {
-  document.getElementById("esercizio1").innerHTML = numero1; 
+  document.getElementById("esercizio1").innerHTML =
+    "Il numero maggiore è " + numero1 + ".";
+} else if (numero2 > numero1) {
+  document.getElementById("esercizio1").innerHTML =
+    "Il numero maggiore è " + numero2 + ".";
 } else {
-  document.getElementById("esercizio1").innerHTML = numero2; 
+  document.getElementById("esercizio1").innerHTML =
+    numero1 + " e " + numero2 + " sono uguali" + ".";
 }</pre
         >
       </code>
@@ -33,10 +38,12 @@ if (numero1 > numero2) {
       </p>
       <code>
         <pre class="scheda-esercizio">
-let numIntero = 4;
+let numIntero = 7;
 
 if (numIntero !== 5) {
   document.getElementById("esercizio2").innerHTML = "not equal";
+} else {
+  document.getElementById("esercizio2").innerHTML = "equal";
 }
 </pre
         >
@@ -50,10 +57,14 @@ if (numIntero !== 5) {
       </p>
       <code>
         <pre class="scheda-esercizio">
-let numeroA = 19;
+let numeroA = 10;
 
 if (numeroA % 5 === 0) {
-  document.getElementById("esercizio3").innerHTML = "Il numero" + numeroA + " è divisibile per 5.";
+  document.getElementById("esercizio3").innerHTML =
+    "Il numero " + numeroA + " è divisibile per 5.";
+} else {
+  document.getElementById("esercizio3").innerHTML =
+    "Il numero " + numeroA + " non è divisibile per 5.";
 }
 </pre
         >
@@ -71,15 +82,15 @@ let numeroB = 4;
 let numeroC = 12;
 
 if (
-  (numeroB || numeroC) === 8 ||
+  numeroB === 8 ||
+  numeroC === 8 ||
   numeroB + numeroC === 8 ||
   numeroB - numeroC === 8 ||
   numeroC - numeroB === 8
 ) {
   document.getElementById("esercizio4").innerHTML = "condizione rispettata";
 } else {
-  document.getElementById("esercizio4").innerHTML =
-    "condizione non rispettata";
+  document.getElementById("esercizio4").innerHTML = "condizione non rispettata";
 }
 </pre
         >

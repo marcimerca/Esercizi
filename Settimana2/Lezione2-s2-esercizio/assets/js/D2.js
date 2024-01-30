@@ -33,6 +33,7 @@ if (numIntero !== 5) {
 */
 
 let numeroA = 10;
+
 if (numeroA % 5 === 0) {
   document.getElementById("esercizio3").innerHTML =
     "Il numero " + numeroA + " è divisibile per 5.";
@@ -47,6 +48,7 @@ if (numeroA % 5 === 0) {
 
 let numeroB = 4;
 let numeroC = 12;
+
 if (
   numeroB === 8 ||
   numeroC === 8 ||
