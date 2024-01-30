@@ -3,14 +3,17 @@
 */
 
 let numero1 = 10;
-let numero2 = 14;
+let numero2 = 10;
 
 if (numero1 > numero2) {
   document.getElementById("esercizio1").innerHTML =
-    "Il numero maggiore è " + numero1;
+    "Il numero maggiore è " + numero1 + ".";
+} else if (numero2 > numero1) {
+  document.getElementById("esercizio1").innerHTML =
+    "Il numero maggiore è " + numero2 + ".";
 } else {
   document.getElementById("esercizio1").innerHTML =
-    "Il numero maggiore è " + numero2;
+    numero1 + " e " + numero2 + " sono uguali" + ".";
 }
 
 /* ESERCIZIO 2
