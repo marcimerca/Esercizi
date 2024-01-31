@@ -170,6 +170,7 @@ if (numDato % 2 === 0) {
       console.log("Uguale a 10 o maggiore");
     }
 */
+
 let val = 7;
 if (val < 5) {
   document.getElementById("esercizio10").innerHTML =
@@ -201,6 +202,7 @@ me.city = "Toronto";
 delete me.lastName;
 
 console.log(me);
+
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
