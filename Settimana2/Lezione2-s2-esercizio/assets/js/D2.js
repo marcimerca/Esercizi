@@ -152,9 +152,11 @@ if (typeof valore === "number") {
 
 let numDato = 3;
 if (numDato % 2 === 0) {
-  document.getElementById("esercizio9").innerHTML = "Il numero dato è pari.";
+  document.getElementById("esercizio9").innerHTML =
+    "Il numero " + numDato + " è pari.";
 } else {
-  document.getElementById("esercizio9").innerHTML = "Il numero dato è dispari.";
+  document.getElementById("esercizio9").innerHTML =
+    "Il numero " + numDato + " è dispari.";
 }
 
 /* ESERCIZIO 10
