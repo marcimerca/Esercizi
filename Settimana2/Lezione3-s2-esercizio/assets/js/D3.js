@@ -195,13 +195,13 @@ console.log(crewMass);
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-if (crewMass < 500) {
+if (crewMass <= 500) {
   console.log("Ship is under loaded");
-} else if (crewMass > 500 && crewMass < 700) {
+} else if (crewMass > 500 && crewMass <= 700) {
   console.log("Ship is half loaded");
-} else if (crewMass > 700 && crewMass < 900) {
+} else if (crewMass > 700 && crewMass <= 900) {
   console.log("Warning: Load is over 700");
-} else if (crewMass > 900 && crewMass < 1000) {
+} else if (crewMass > 900 && crewMass <= 1000) {
   console.log("Critical Load: Over 900");
 } else {
   console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
@@ -225,6 +225,18 @@ console.log(starWarsCharacters);
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
+for (let i = 0; i < charactersNames.length; i++) {
+  for (let y = 0; y < femaleCharacters.length; y++) {
+    if (charactersNames[i] === femaleCharacters[y].name) {
+      charactersNames[i].p;
+    }
+  }
+}
+console.log(charactersNames.length);
+
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+let randomCharacter;
+
+Math.floor(Math.random() * starWarsCharacters.length);
