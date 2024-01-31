@@ -168,31 +168,6 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       break;
   }
 }
-console.log(eyeColor);
-// for (let i = 0; i < starWarsCharacters.length; i++) {
-//   switch (starWarsCharacters[i]) {
-//     case 0:
-//       eyeColor.blue.push(starWarsCharacters[0]);
-//     case 1:
-//       eyeColor.yellow.push(starWarsCharacters[1]);
-//     case 2:
-//       eyeColor.red.push(starWarsCharacters[2]);
-//     case 3:
-//       eyeColor.yellow.push(starWarsCharacters[3]);
-//     case 4:
-//       eyeColor.brown.push(starWarsCharacters[4]);
-//     case 5:
-//       eyeColor.blue.push(starWarsCharacters[5]);
-//     case 6:
-//       eyeColor.blue.push(starWarsCharacters[6]);
-//     case 7:
-//       eyeColor.red.push(starWarsCharacters[7]);
-//     case 8:
-//       eyeColor.brown.push(starWarsCharacters[8]);
-//     case 9:
-//       eyeColor["blue-gray"].push(starWarsCharacters[9]);
-//   }
-// }
 
 console.log(eyeColor);
 
@@ -236,12 +211,12 @@ if (crewMass < 500) {
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  if (starWarsCharacters[i].gender === "n/a") {
-    starWarsCharacters[i].gender === "robot";
-  }
-}
-console.log(starWarsCharacters);
+// for (let i = 0; i < starWarsCharacters.length; i++) {
+//   if (starWarsCharacters[i].gender === "n/a") {
+//     starWarsCharacters[i].gender === "robot";
+//   }
+// }
+// console.log(starWarsCharacters);
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
