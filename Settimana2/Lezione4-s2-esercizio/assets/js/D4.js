@@ -21,12 +21,12 @@ console.log("L'area del rettangolo è " + area(9, 12));
 
 console.log("Esercizio 2");
 
-const crazySum = function (num1, num2) {
+function crazySum(num1, num2) {
   if (num1 === num2) {
     return (num1 + num2) * 3;
   }
   return num1 + num2;
-};
+}
 
 console.log("La somma dei numeri è " + crazySum(2, 5));
 console.log("La somma dei numeri è " + crazySum(2, 2));
@@ -39,11 +39,11 @@ console.log("La somma dei numeri è " + crazySum(2, 2));
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("Esercizio 3");
 
-function crazyDiff(param1, param2 = 19) {
-  if (param1 > param2) {
-    return Math.abs((param1 - param2) * 3);
+function crazyDiff(param1) {
+  if (param1 > 19) {
+    return Math.abs((param1 - 19) * 3);
   }
-  return Math.abs(param1 - param2);
+  return Math.abs(param1 - 19);
 }
 
 console.log("La differenza assoluta fra parametri è " + crazyDiff(20));
@@ -78,10 +78,10 @@ epify = (stringa) => {
   if (stringa.indexOf("EPICODE") === 0) {
     return stringa;
   }
-  return stringa.concat("EPICODE ");
+  return "EPICODE".concat(" " + stringa);
 };
 
-console.log(epify("Ciao a te "));
+console.log(epify("ciao a te "));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -101,7 +101,8 @@ check3and7 = (n) => {
     console.log("Il numero " + n + " NON è un multiplo di 3 o 7");
   }
 };
-
+// meglio inserire return dentro funzione
+//console.log fuori
 check3and7(19);
 
 /* ESERCIZIO 7
@@ -113,15 +114,15 @@ check3and7(19);
 console.log("Esercizio 7");
 
 reverseString = (stringa) => {
-  console.log(
+  return (
     "La stringa iniziale è " +
-      stringa +
-      ", invertita diventa " +
-      stringa.split("").reverse().join("")
+    stringa +
+    ", invertita diventa " +
+    stringa.split("").reverse().join("")
   );
 };
 
-reverseString("camaleonte");
+console.log(reverseString("camaleonte"));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
