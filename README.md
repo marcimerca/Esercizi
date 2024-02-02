@@ -10,4 +10,7 @@
 ### LEZIONE 4
 -  Creare il layout di un articolo e lo stile avanzato con i CSS
 ## SETTIMANA 1 - PROGETTO
-- Layout completo HTML + CSS 
+- Layout completo HTML + CSS
+- 
+## SETTIMANA 2 - PROGETTO
+-  Info: il progetto è nella cartella Settimana2 
