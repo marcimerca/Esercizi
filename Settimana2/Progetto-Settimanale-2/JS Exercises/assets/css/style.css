@@ -1,0 +1,10 @@
+body {
+  padding: 2rem;
+}
+.consegna {
+  font-style: italic;
+}
+
+.scheda-esercizio {
+  background-color: lightgray;
+}
