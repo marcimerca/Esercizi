@@ -84,7 +84,7 @@ h1 {
   font-size: 1.2rem;
   display: inline-block;
   margin-right: 1rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
 }
 .cards a,
 figcaption a {
