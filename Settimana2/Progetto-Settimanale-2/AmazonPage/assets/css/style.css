@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9edee;
+}
+
+h1,
+a,
+p {
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+.logo-bar {
+  width: 100%;
+  background-color: #222f3f;
+
+  padding: 0.5rem 1.8rem;
+}
+
+nav {
+  width: 100%;
+  background-color: #354758;
+  padding: 0.6rem 1.8rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  text-align: center;
+  width: 95%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.orange-rectangle {
+  width: 100%;
+  background-color: #f56600;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.orange-rectangle p {
+  padding: 0.3rem;
+}
+
+.holiday-green {
+  text-align: center;
+  background-image: url(../images/bg-image.png);
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+.cards {
+  text-align: left;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+.cards p {
+  color: black;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1.5rem;
+}
+.cards a,
+figcaption a {
+  color: #0c5567;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cards-container {
+  text-align: center;
+  width: 100%;
+}
+
+.single-card-1,
+.single-card-2,
+.single-card-3,
+.single-card-4 {
+  display: inline-block;
+  width: 20%;
+  height: 20rem;
+  background-size: cover;
+  border-radius: 5%;
+  margin: 1rem;
+  background-position-x: center;
+  box-shadow: 2px 2px 5px grey;
+}
+.single-card-1 {
+  background-image: url(../images/img_1.jpg);
+}
+
+.single-card-2 {
+  background-image: url(../images/img_2.jpg);
+}
+
+.single-card-3 {
+  background-image: url(../images/img_3.jpg);
+}
+.single-card-4 {
+  background-image: url(../images/img_4.jpg);
+}
+
+.banner {
+  margin-bottom: 2rem;
+}
+figure {
+  width: 100%;
+  margin: 0;
+}
+figcaption p {
+  display: inline-block;
+  color: black;
+  margin-right: 1rem;
+}
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+.back-to-top {
+  width: 100%;
+  background-color: #354758;
+  padding: 0.6rem 1.8rem;
+}
+.footer-img {
+  width: 100%;
+  background-color: #222f3f;
+  padding: 2rem;
+}
