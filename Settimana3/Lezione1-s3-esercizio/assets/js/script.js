@@ -28,6 +28,7 @@ const changePcontent = function () {
     lista[i].innerText = "sono un paragrafo cambiato";
   }
 };
+
 changePcontent();
 
 /* ESERCIZIO 4
@@ -64,7 +65,7 @@ addToTheSecond();
 const addParagraph = function () {
   const newPara = document.createElement("p");
   newPara.innerText = "Sono stato aggiunto al primo div";
-  document.querySelector("div").appendChild(newPara);
+  document.querySelectorAll("div")[0].appendChild(newPara);
 };
 
 addParagraph();
@@ -74,7 +75,8 @@ addParagraph();
     */
 
 const hideFirstUl = function () {
-  document.querySelector("ul").innerHTML = "";
+  const primaLista = document.getElementById("firstList");
+  primaLista.style.display = "none";
 };
 hideFirstUl();
 
@@ -98,22 +100,42 @@ paintItGreen();
 const makeItClickable = function () {
   let stringa = document.querySelector("h1");
   stringa.addEventListener("click", function () {
-    stringa.innerText = stringa.innerText.slice(
-      0,
-      stringa.innerText.length - 1
-    );
+    stringa.innerText = stringa.innerText.slice(0, -1);
   });
 };
+// non va fatto cos' ma con splice rivedere
 
 makeItClickable();
+
+///altra versine prof, trasformando stringa in array
+
+const makeItClickable2 = function () {
+  let stringa = document.querySelector("h1");
+  stringa.style.cursor = "pointer";
+  stringa.addEventListener("click", function () {
+    let scritta = stringa.innerText.split("");
+    scritta.pop();
+    let nuovaScritta = scritta.join("");
+    scritta.innerText = nuovaScritta;
+  });
+};
+makeItClickable2();
 
 /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
+// const revealFooterLink = function () {
+//   const footer = document.querySelector("footer");
+//   footer.addEventListener("click", function () {
+//     alert(document.querySelector("footer a"));
+//   });
+// };
+
+//vedere versione prof
 const revealFooterLink = function () {
   const footer = document.querySelector("footer");
   footer.addEventListener("click", function () {
-    alert(document.querySelector(" footer a"));
+    alert(document.querySelector("footer a"));
   });
 };
 
@@ -157,6 +179,31 @@ const oggetti = [
   },
 ];
 
+const generateTable = function () {
+  const tableContainer = document.getElementById("tableArea");
+  const tabella = document.createElement("table");
+  const intestazione = document.createElement("tr");
+  const thId = document.createElement("th");
+  thId.innerText = "ID";
+  const thImmagine = document.createElement("th");
+  thId.innerText = "Immagine";
+  const thNome = document.createElement("th");
+  thId.innerText = "Nome prodotto";
+  const thQuantita = document.createElement("th");
+  thId.innerText = "Quantità";
+  const thPrezzo = document.createElement("th");
+  thId.innerText = "Prezzo";
+
+  intestazione.appendChild(thId);
+  intestazione.appendChild(thImmagine);
+  intestazione.appendChild(thNome);
+  intestazione.appendChild(thPrezzo);
+
+  tabella.appendChild(intestazione);
+};
+
+generateTable();
+
 // const generateTable = function () {
 //   const table = document.createElement("table");
 //   document.getElementById("tableArea").appendChild(table);
@@ -177,7 +224,7 @@ const oggetti = [
 //   }
 // };
 
-// generateTable();
+generateTable();
 
 /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
