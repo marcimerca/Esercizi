@@ -1,7 +1,7 @@
 //creo tabella
 
 const contenitore = document.getElementById("contenitoreTombola");
-
+const arrayCelle = [];
 creaTabellone = () => {
   for (let i = 1; i < 91; i++) {
     const cella = document.createElement("div");
