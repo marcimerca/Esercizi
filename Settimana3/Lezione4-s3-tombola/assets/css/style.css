@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#button-estratto {
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+}
+#numEstratto {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+}
+.contenitoreTombola {
+  display: inline-block;
+}
+
+.riga {
+  border: 1px solid red;
+  height: 50px;
+}
+
+.cella {
+  display: inline-block;
+  border: 1px solid black;
+  width: 10%;
+}
+
+#estrai {
+  margin-bottom: 2rem;
+  width: auto;
+  font-size: 1.5rem;
+}
+
+.colora {
+  background-color: greenyellow;
+}
