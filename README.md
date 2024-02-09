@@ -13,3 +13,5 @@
 - Layout completo HTML + CSS
 ## SETTIMANA 2 - PROGETTO
 -  Info: il progetto è nella cartella Settimana2 
+## SETTIMANA 3 - PROGETTO
+-  Info: il progetto è nella cartella Settimana3
