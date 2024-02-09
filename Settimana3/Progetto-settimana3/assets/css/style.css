@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  text-align: left;
+  padding-left: 2rem;
+}
+table,
+tr {
+  border: 1px solid black;
+}
+
+.test {
+  background-color: yellow;
+}
