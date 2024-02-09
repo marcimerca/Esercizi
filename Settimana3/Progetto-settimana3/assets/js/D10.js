@@ -136,7 +136,9 @@ console.log(deleteOne("ciao", true));
 */
 console.log("Esercizio 5");
 
-onlyLetters = (stringa) => {};
+onlyLetters = (stringa) => {
+  return stringa.replace(/[0-9]/g, "");
+};
 
 console.log(onlyLetters("Ho 2 cani e 5 tartarughe"));
 
@@ -226,10 +228,6 @@ console.log(rollTheDices(3));
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 console.log("Esercizio 9");
-
-// const dataOggi = new Date();
-// const millisecondiDataOggi = dataOggi.getTime();
-// console.log("Millisecondi dalla data di oggi:", millisecondiOggi);
 
 howManyDays = (data) => {
   const dataOggi = new Date();
@@ -407,12 +405,14 @@ console.log("Esercizio 12");
 
 newestMovie = () => {
   let anno = 1200;
+  let filmRecente;
   movies.forEach((element) => {
     if (parseInt(element.Year) > anno) {
       anno = parseInt(element.Year);
+      filmRecente = element;
     }
   });
-  return anno;
+  return filmRecente;
 };
 
 console.log(newestMovie());
@@ -608,8 +608,11 @@ aggiungiClasseTest();
 
 // [EXTRA] JS Avanzato
 
+console.log("Esercizio 27");
+
 /* ESERCIZIO 27
   Crea una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
+
 
   Esempio:
   halfTree(3)
