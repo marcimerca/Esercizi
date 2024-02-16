@@ -43,7 +43,7 @@ function checkInputs() {
   const commentoValue = document.getElementById("commentoPg4").value.trim();
 
   if (starsValue === 0 || commentoValue === "") {
-    alert("inserire commento e il numero di stelline.");
+    alert("Enter comment and number of stars.");
     return false; // Se uno o entrambi i campi non sono compilati, restituisci falso
   }
 
@@ -57,6 +57,6 @@ moreInfoButton.addEventListener("click", function () {
   const inputsAreValid = checkInputs();
 
   if (inputsAreValid) {
-    alert("Recensione ricevuta. Grazie!"); //risposta dopo aver verificato i campi(stelline e commento)
+    alert("Review received. Thank you!"); //risposta dopo aver verificato i campi(stelline e commento)
   }
 });
