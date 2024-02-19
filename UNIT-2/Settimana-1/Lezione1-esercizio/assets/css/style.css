@@ -241,11 +241,12 @@ footer a {
     display: inline-block;
     padding: 0 2em;
   }
-  header img {
+  header div img {
     width: 100px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 1rem;
+    margin-bottom: 0;
   }
   header div {
     display: inline-block;
@@ -255,6 +256,7 @@ footer a {
   header div p {
     display: inline-block;
     vertical-align: middle;
+    margin: 0;
   }
 
   header nav {
