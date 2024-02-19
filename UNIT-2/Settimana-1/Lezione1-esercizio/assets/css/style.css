@@ -238,12 +238,10 @@ footer a {
   header {
     text-align: left;
     width: 100%;
-    display: inline-block;
     padding: 0 2em;
   }
   header div img {
     width: 100px;
-    display: inline-block;
     vertical-align: middle;
     margin-right: 1rem;
     margin-bottom: 0;
@@ -254,7 +252,6 @@ footer a {
     vertical-align: middle;
   }
   header div p {
-    display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
@@ -268,12 +265,7 @@ footer a {
   header p {
     display: inline-block;
   }
-  header ul {
-    display: inline-block;
-  }
-  header ul li {
-    display: inline-block;
-  }
+
   iframe {
     width: 49%;
     display: inline-block;
