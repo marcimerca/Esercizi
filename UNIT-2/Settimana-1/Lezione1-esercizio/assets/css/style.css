@@ -278,11 +278,13 @@ footer a {
     width: 49%;
     display: inline-block;
     height: 245px;
+    vertical-align: top;
   }
   .novita {
     width: 50%;
     display: inline-block;
     vertical-align: top;
+    height: 245px;
   }
   aside {
     text-align: center;
