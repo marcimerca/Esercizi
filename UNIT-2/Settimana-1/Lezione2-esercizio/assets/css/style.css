@@ -161,7 +161,7 @@ h1 + p {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 576px) {
   h1 {
     font-size: 3rem;
   }
@@ -175,6 +175,16 @@ h1 + p {
   h2 {
     font-size: 1.4rem;
     font-weight: 700;
+  }
+}
+@media screen and (max-width: 576px) {
+  #linea {
+    width: 420px;
+    display: block;
+    position: relative;
+    right: -5px;
+    top: -43px;
+    opacity: 0.5;
   }
 }
 
@@ -379,6 +389,27 @@ aside div p:last-child {
 #contenitore-pulsanti #toTop a i {
   color: red;
 }
+
+@media screen and (max-width: 576px) {
+  #contenitore-pulsanti {
+    position: fixed;
+    right: 0;
+    top: 82vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #toTop {
+    position: absolute;
+    top: 95vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #toTop {
+    position: absolute;
+    top: 95vh;
+  }
+}
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
@@ -398,10 +429,6 @@ footer {
   footer {
     padding: 1em 12em;
   }
-  #toTop {
-    position: absolute;
-    top: 95vh;
-  }
 }
 
 footer a {
@@ -415,10 +442,6 @@ footer a {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-  #toTop {
-    position: absolute;
-    top: 95vh;
   }
 }
 
