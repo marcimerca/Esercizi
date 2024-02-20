@@ -384,10 +384,12 @@ aside div p:last-child {
   border: 1px solid white;
   border-radius: 7px;
   font-size: 25px;
+  box-shadow: 5px 5px 10px #1658dd;
 }
 
 #contenitore-pulsanti #toTop a i {
   color: red;
+  box-shadow: 5px 5px 10px red;
 }
 
 @media screen and (max-width: 576px) {
