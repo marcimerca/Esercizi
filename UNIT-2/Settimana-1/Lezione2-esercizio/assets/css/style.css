@@ -67,14 +67,6 @@ header {
   header .brand p {
     margin-bottom: 0;
   }
-  #linea {
-    width: 520px;
-    display: block;
-    position: relative;
-    right: -453px;
-    top: -50px;
-    opacity: 0.5;
-  }
 }
 
 header nav ul {
@@ -186,9 +178,17 @@ h1 + p {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 3.6rem;
+  }
+  #linea {
+    width: 520px;
+    display: block;
+    position: relative;
+    right: -5px;
+    top: -50px;
+    opacity: 0.5;
   }
 }
 
@@ -198,6 +198,14 @@ h1 + p {
   }
   section {
     border-radius: 20px;
+  }
+  #linea {
+    width: 520px;
+    display: block;
+    position: relative;
+    right: -453px;
+    top: -50px;
+    opacity: 0.5;
   }
 }
 
@@ -386,9 +394,13 @@ footer {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   footer {
     padding: 1em 12em;
+  }
+  #toTop {
+    position: absolute;
+    top: 95vh;
   }
 }
 
