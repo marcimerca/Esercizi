@@ -41,7 +41,7 @@ body {
   }
   .grow {
     display: inline-block;
-    width: 150px;
+    width: 30%;
   }
   nav ul li {
     background-color: #f3df85;
@@ -50,7 +50,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 3em;
-    padding: 0.5em 0.5em;
+    padding: 2em 1em;
   }
   nav ul li a {
     text-decoration: none;
