@@ -29,18 +29,21 @@ body {
   #shop {
     width: 80%;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 2em 1em;
+    display: inline-block;
   }
-
+  #shop img {
+    margin-right: 1em;
+  }
   #shop a {
     font-size: 2em;
     font-weight: 900;
-    margin-left: -20px;
+
+    margin: 0 auto;
   }
+
   .grow {
-    display: inline-block;
     width: 30%;
   }
   nav ul li {
@@ -56,6 +59,7 @@ body {
     text-decoration: none;
     color: #612407;
     width: 5em;
+    margin: 0 auto;
   }
 
   #card-container {
