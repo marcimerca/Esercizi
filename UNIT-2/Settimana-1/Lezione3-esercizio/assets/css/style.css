@@ -17,8 +17,6 @@ body {
   }
   nav {
     width: 100%;
-    text-align: center;
-    display: flex;
   }
   nav ul {
     display: flex;
@@ -41,17 +39,17 @@ body {
     font-weight: 900;
   }
   .grow {
-    flex-grow: 1;
-    width: 7.5em;
+    display: inline-block;
+    width: 150px;
   }
   nav ul li {
     background-color: #f3df85;
-    margin: 0.2em;
+    margin: 0.5em;
     text-decoration: none;
     display: flex;
     align-items: center;
     border-radius: 3em;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
   }
   nav ul li a {
     text-decoration: none;
