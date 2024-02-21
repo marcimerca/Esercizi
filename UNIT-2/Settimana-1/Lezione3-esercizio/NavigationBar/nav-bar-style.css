@@ -1,0 +1,17 @@
+header {
+  background-color: #faf7e3;
+}
+nav {
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+}
+nav ul li {
+  background-color: #f3df85;
+  padding: 1rem;
+  margin: 1em;
+}
