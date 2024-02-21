@@ -58,7 +58,7 @@ body {
   nav ul li a {
     text-decoration: none;
     color: #612407;
-    width: 5em;
+    width: auto;
     margin: 0 auto;
   }
 
