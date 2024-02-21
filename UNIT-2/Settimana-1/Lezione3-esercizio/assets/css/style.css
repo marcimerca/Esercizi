@@ -37,6 +37,7 @@ body {
   #shop a {
     font-size: 2em;
     font-weight: 900;
+    margin-left: -20px;
   }
   .grow {
     display: inline-block;
