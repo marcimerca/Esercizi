@@ -42,7 +42,7 @@ body {
 }
 
 .postIt:hover {
-  transform: rotate(0deg) scale(1.05);
+  transform: rotate(0deg) scale(1.2);
 }
 
 #container .postIt:nth-child(1),
