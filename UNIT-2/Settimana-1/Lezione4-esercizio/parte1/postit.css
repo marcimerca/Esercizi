@@ -48,18 +48,18 @@ body {
 #container .postIt:nth-child(1),
 #container .postIt:nth-child(5),
 #container .postIt:nth-child(7) {
-  background: linear-gradient(#fcfcca, #bdbda3);
+  background: linear-gradient(#ffffa5, #bdbda3);
 }
 
 #container .postIt:nth-child(2),
 #container .postIt:nth-child(4),
 #container .postIt:nth-child(8) {
-  background: linear-gradient(#ccfece, #9db5a1);
+  background: linear-gradient(#a8ffab, #9db5a1);
 }
 
 #container .postIt:nth-child(3),
 #container .postIt:nth-child(6) {
-  background: linear-gradient(#cbcafa, #8b8c9b);
+  background: linear-gradient(#a9a7fd, #8b8c9b);
 }
 #container .postIt:nth-child(2) {
   animation-delay: 0.1s;
