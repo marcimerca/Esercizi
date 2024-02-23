@@ -15,3 +15,6 @@
 -  Info: il progetto è nella cartella Settimana2 
 ## SETTIMANA 3 - PROGETTO
 -  Info: il progetto è nella cartella Settimana3
+## UNIT 2
+## SETTIMANA 1 - PROGETTO
+- Info: la visualizzazione desktop è da 1440px.
