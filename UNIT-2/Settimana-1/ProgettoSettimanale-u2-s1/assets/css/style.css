@@ -227,29 +227,31 @@ header nav ul li:nth-child(5) a {
   padding: 4px 10px;
 }
 
-.bookmark {
-  vertical-align: middle;
-  position: absolute;
-  right: 0;
-}
-
 #left-section .scheda-text {
-  width: 60%;
+  width: 70%;
   position: relative;
   flex-shrink: 0;
 }
 
 #left-section .immagine-grande {
-  width: 100%;
+  width: 140%;
 }
 
+.contenitore-p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenitore-p p {
+  color: #757575;
+  font-size: 0.8em;
+}
 /* right section */
 
 #right-section {
   width: 40%;
   display: flex;
   flex-direction: column;
-  z-index: 1000;
   height: fit-content;
   position: sticky;
   top: 100px;
