@@ -116,6 +116,7 @@ header nav ul li:nth-child(5) a {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid gray;
+  margin-bottom: 2em;
 }
 
 .schede-container {
@@ -171,9 +172,112 @@ header nav ul li:nth-child(5) a {
   width: 100%;
 }
 
-span {
+.containerOther .span,
+#left-section span {
   color: #757575;
 }
 .star {
   vertical-align: middle;
+}
+
+/* Sezioni  */
+
+#section-container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  gap: 100px;
+}
+#left-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#left-section .scheda {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.big {
+  font-size: 1.6em;
+}
+#left-section .scheda p:nth-child(3) {
+  color: #757575;
+  font-size: 1em;
+}
+#left-section .scheda p:nth-child(4) {
+  color: #757575;
+  font-size: 0.8em;
+}
+
+.arrotondato {
+  background-color: #f2f3f3;
+  border-radius: 40px;
+  padding: 4px 10px;
+}
+
+.bookmark {
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+}
+
+#left-section .scheda-text {
+  width: 60%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+#left-section .immagine-grande {
+  width: 100%;
+}
+
+/* right section */
+
+#right-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+#right-section p {
+  font-size: 0.7em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#right-section .contenitore-rettangoli p {
+  border: 1px solid #f2f3f3;
+  padding: 1em;
+  border-radius: 3px;
+  margin: 0;
+  color: #757575;
+}
+.contenitore-rettangoli {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 75%;
+  border-bottom: 1px solid #f2f3f3;
+  padding-bottom: 2em;
+}
+
+#right-section nav ul {
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #757575;
+  font-size: 0.7em;
+  width: 80%;
+  padding-left: 1em;
+  font-weight: 700;
+}
+
+#right-section nav ul li a {
+  color: #757575;
 }
