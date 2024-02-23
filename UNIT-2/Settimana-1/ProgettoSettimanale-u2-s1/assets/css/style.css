@@ -251,7 +251,8 @@ header nav ul li:nth-child(5) a {
   flex-direction: column;
   z-index: 1000;
   height: fit-content;
-  border: 1px solid black;
+  position: sticky;
+  top: 100px;
 }
 #right-section p {
   font-size: 0.7em;
