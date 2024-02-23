@@ -124,7 +124,7 @@ main {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid gray;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .schede-container {
@@ -179,9 +179,7 @@ main {
   border-radius: 50%;
   width: 100%;
 }
-
-.containerOther .span,
-#left-section span {
+span {
   color: #757575;
 }
 .star {
