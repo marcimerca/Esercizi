@@ -2,7 +2,7 @@ const header = document.getElementById("header");
 const linkStarted = document.getElementById("linkStarted");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 530) {
+  if (window.scrollY > 450) {
     header.style.background = "white";
     linkStarted.style.backgroundColor = "#1a8917";
   } else {
