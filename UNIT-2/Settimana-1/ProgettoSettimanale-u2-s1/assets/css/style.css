@@ -12,7 +12,6 @@ body {
 /* header*/
 header {
   text-align: center;
-  width: 100%;
   background-color: #ffc017;
   padding: 1.2em 0;
   border-bottom: 1px solid #191919;
@@ -20,17 +19,18 @@ header {
   top: 0;
   z-index: 1;
 }
-#contenitore-ridotto {
-  text-align: center;
+#contenitore-ridotto,
+.container-flex,
+.trending,
+#section-container {
   width: 80%;
   margin: 0 auto;
+}
+
+#contenitore-ridotto {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#contenitore-ridotto .logo {
-  text-align: left;
 }
 
 header nav ul {
@@ -47,7 +47,7 @@ a {
   color: #191919;
 }
 
-header nav ul li:nth-child(5) a {
+#linkStarted {
   color: white;
   background-color: #191919;
   padding: 10px;
@@ -55,20 +55,19 @@ header nav ul li:nth-child(5) a {
 }
 
 /* MAIN */
-
-/* hero*/
 main {
   padding-bottom: 7em;
 }
+/* hero*/
+
 .hero {
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
   margin-bottom: 2em;
   overflow: hidden;
 }
+
 .container-flex {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
 
   margin-bottom: 2em;
@@ -110,9 +109,6 @@ main {
 /* trending */
 
 .trending {
-  width: 80%;
-
-  margin: 0 auto;
   padding-bottom: 3em;
 }
 .trending .p-img p {
@@ -122,7 +118,7 @@ main {
 }
 .containerOther {
   width: 100%;
-  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid gray;
@@ -193,9 +189,8 @@ main {
 /* Sezioni  */
 
 #section-container {
-  width: 80%;
   display: flex;
-  margin: 0 auto;
+
   gap: 150px;
 }
 #left-section {
@@ -248,7 +243,7 @@ main {
 /* right section */
 
 #right-section {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -289,11 +284,70 @@ main {
   font-size: 0.7em;
   width: 80%;
   padding-left: 1em;
-  font-weight: 700;
   font-weight: normal;
 }
 
 #right-section nav ul li a {
   color: #757575;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0.5em 0;
+  }
+  #contenitore-ridotto,
+  .container-flex,
+  .trending,
+  #section-container {
+    width: 90%;
+  }
+
+  main {
+    padding-bottom: 7em;
+  }
+  /* hero*/
+
+  .container-flex {
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .container-flex .content {
+    padding-top: 3em;
+    width: 60%;
+  }
+  .artwork {
+    width: 50%;
+    position: relative;
+    right: -100px;
+  }
+
+  .content h1 {
+    font-size: 4em;
+  }
+
+  /* trending */
+
+  .scheda {
+    width: 40%;
+  }
+
+  /* Sezioni  */
+
+  #section-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #left-section {
+    width: 90%;
+    gap: 50px;
+  }
+
+  /* right section */
+
+  #right-section {
+    width: 100%;
+    position: static;
+    order: -1;
+  }
 }
