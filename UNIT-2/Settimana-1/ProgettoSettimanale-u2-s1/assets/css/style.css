@@ -57,7 +57,9 @@ header nav ul li:nth-child(5) a {
 /* MAIN */
 
 /* hero*/
-
+main {
+  padding-bottom: 7em;
+}
 .hero {
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
@@ -194,7 +196,7 @@ header nav ul li:nth-child(5) a {
   width: 80%;
   display: flex;
   margin: 0 auto;
-  gap: 100px;
+  gap: 150px;
 }
 #left-section {
   width: 60%;
@@ -216,15 +218,12 @@ header nav ul li:nth-child(5) a {
   color: #757575;
   font-size: 1em;
 }
-#left-section .scheda p:nth-child(4) {
-  color: #757575;
-  font-size: 0.8em;
-}
 
 .arrotondato {
   background-color: #f2f3f3;
   border-radius: 40px;
   padding: 4px 10px;
+  margin-left: 2px;
 }
 
 #left-section .scheda-text {
@@ -296,4 +295,5 @@ header nav ul li:nth-child(5) a {
 
 #right-section nav ul li a {
   color: #757575;
+  letter-spacing: 1px;
 }
