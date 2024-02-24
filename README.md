@@ -34,4 +34,4 @@
 
 ## SETTIMANA 1 - PROGETTO
 
-- Info: il progetto è nella cartella UNIT-2/Settimana-1/ProgettoSettimanale-u2-s1. La visualizzazione desktop è da 1440px. Sono presenti anche le media query per la visualizzazione tablet e mobile
+- Info: il progetto è nella cartella UNIT-2/Settimana-1/ProgettoSettimanale-u2-s1. La visualizzazione desktop è da 1440px. Sono presenti anche le media queries per la visualizzazione tablet e mobile
