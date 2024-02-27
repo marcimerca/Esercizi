@@ -81,7 +81,7 @@ EXTRAS
 
 13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
 
-14) Crea un modale con un campo email e un messaggio.
+14) Crea un modale con un campo email e un messaggio. 
 
 15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato.
 
@@ -195,10 +195,20 @@ EXTRAS
     <div class="container mb-5" id="saldi">
       <div class="d-flex justify-content-between">
         <h3 class="card-title">Saldi</h3>
-        <p class="text-info">Nascondi sezione</p>
+
+        <button
+          class="button-mostra-nascondi btn btn-outline-info border-0 justify-content-end"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#saldi-contenuto"
+          aria-expanded="true"
+          aria-controls="saldi-contenuto"
+        >
+          Nascondi sezione
+        </button>
       </div>
 
-      <div class="row g-2">
+      <div class="row g-2 collapse show" id="saldi-contenuto">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card border border-2 border-info">
             <img
@@ -281,10 +291,20 @@ EXTRAS
     <div class="container mb-5" id="welcome">
       <div class="d-flex justify-content-between">
         <h3 class="card-title">Welcome Summer</h3>
-        <p class="text-info">Nascondi sezione</p>
+
+        <button
+          class="button-mostra-nascondi btn btn-outline-info border-0 justify-content-end"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#welcome-contenuto"
+          aria-expanded="true"
+          aria-controls="welcome-contenuto"
+        >
+          Nascondi sezione
+        </button>
       </div>
 
-      <div class="row g-2">
+      <div class="row g-2 collapse show" id="welcome-contenuto">
         <div class="col-12 col-sm-6 col-xl-4">
           <div class="card">
             <img
@@ -615,5 +635,6 @@ EXTRAS
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
