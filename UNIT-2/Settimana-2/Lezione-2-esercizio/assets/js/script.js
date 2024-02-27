@@ -17,3 +17,12 @@ window.onload = function () {
   const numViaggi = Viaggi.length;
   alert(`In questa pagina sono presenti ${numViaggi} viaggi per te!`);
 };
+
+// rimuovi card
+
+rimuoviCard = () => {
+  cards = document.querySelectorAll(".card");
+  cards.forEach((element) => {
+    element.style.display = "none";
+  });
+};
