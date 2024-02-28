@@ -1,0 +1,19 @@
+@import "font";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-Arial;
+}
+
+@mixin flex-80 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin floating($border-radius: none, $box-shadow: none, $border: none) {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  border: $border;
+}

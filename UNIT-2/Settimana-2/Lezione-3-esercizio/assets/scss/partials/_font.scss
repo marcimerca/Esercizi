@@ -1,0 +1,7 @@
+$font-Arial: "Arial", sans-serif;
+
+@mixin bigTitle {
+  font-size: 4rem;
+  line-height: 4rem;
+  width: 40%;
+}

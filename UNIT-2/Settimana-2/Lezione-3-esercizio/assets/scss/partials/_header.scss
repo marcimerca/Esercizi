@@ -1,0 +1,65 @@
+@import "colori";
+@import "spaziature";
+@import "font";
+@import "generico";
+@import "buttons";
+header {
+  background-color: $bg-hero;
+  @include padding;
+}
+header nav {
+  @include flex-80;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  gap: 20px;
+}
+header p {
+  color: $testo;
+  width: 70%;
+}
+nav ul li a {
+  color: $testo;
+  text-decoration: none;
+}
+
+header h1 {
+  @include bigTitle;
+}
+
+.container {
+  @include flex-80;
+  position: relative;
+}
+
+.container-img {
+  width: 35%;
+  position: absolute;
+  right: -50px;
+  top: 60px;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+button:nth-child(1) {
+  @include buttonGenerico(#0e6cff);
+  color: $testo;
+}
+button:nth-child(2) {
+  @include buttonGenerico(#ff8700);
+  color: $testo;
+}
+button:nth-child(3) {
+  @include buttonGenerico(#4caf50);
+  color: $testo;
+}
