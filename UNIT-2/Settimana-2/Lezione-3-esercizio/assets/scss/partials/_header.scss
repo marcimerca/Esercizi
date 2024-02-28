@@ -6,6 +6,7 @@
 header {
   background-color: $bg-hero;
   @include padding;
+  margin-bottom: 150px;
 }
 header nav {
   @include flex-80;
@@ -24,15 +25,18 @@ nav ul {
 }
 header p {
   color: $testo;
+  opacity: $opacity;
   width: 70%;
 }
 nav ul li a {
   color: $testo;
+  opacity: $opacity;
   text-decoration: none;
 }
 
 header h1 {
   @include bigTitle;
+  font-family: $font-Arial;
 }
 
 .container {
@@ -40,15 +44,26 @@ header h1 {
   position: relative;
 }
 
-.container-img {
+header .container .container-img {
   width: 35%;
   position: absolute;
   right: -50px;
   top: 60px;
 }
 
+// @mixin floating($border-radius: none, $box-shadow: none, $border: none) {
+//   border-radius: $border-radius;
+//   box-shadow: $box-shadow;
+//   border: $border;
+// }
+
 .container-img img {
   width: 100%;
+  @include floating(
+    10px,
+    5px 1px 10px rgb(0, 0, 0),
+    1px solid rgb(220, 102, 249)
+  );
 }
 
 button:nth-child(1) {

@@ -1,0 +1,17 @@
+@import "generico";
+main {
+  padding: 1em;
+}
+main .main-div {
+  display: flex;
+  gap: 10px;
+}
+
+.container-img-main {
+  width: 50%;
+}
+
+.container-img-main img {
+  width: 100%;
+  @include floating(10px, none, 0);
+}

@@ -15,6 +15,7 @@ body {
 header {
   background-color: #640fc5;
   padding: 2em 0;
+  margin-bottom: 150px;
 }
 
 header nav {
@@ -37,11 +38,13 @@ nav ul {
 
 header p {
   color: #f4f4f4;
+  opacity: 0.6;
   width: 70%;
 }
 
 nav ul li a {
   color: #f4f4f4;
+  opacity: 0.6;
   text-decoration: none;
 }
 
@@ -49,6 +52,7 @@ header h1 {
   font-size: 4rem;
   line-height: 4rem;
   width: 40%;
+  font-family: "Arial", sans-serif;
 }
 
 .container {
@@ -58,7 +62,7 @@ header h1 {
   position: relative;
 }
 
-.container-img {
+header .container .container-img {
   width: 35%;
   position: absolute;
   right: -50px;
@@ -67,6 +71,9 @@ header h1 {
 
 .container-img img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 1px 10px rgb(0, 0, 0);
+  border: 1px solid rgb(220, 102, 249);
 }
 
 button:nth-child(1) {
@@ -91,6 +98,194 @@ button:nth-child(3) {
   border-radius: 7px;
   border: none;
   color: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  background-color: #640fc5;
+  padding: 2em 0;
+  margin-bottom: 150px;
+}
+
+header nav {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  gap: 20px;
+}
+
+header p {
+  color: #f4f4f4;
+  opacity: 0.6;
+  width: 70%;
+}
+
+nav ul li a {
+  color: #f4f4f4;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  width: 40%;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .container .container-img {
+  width: 35%;
+  position: absolute;
+  right: -50px;
+  top: 60px;
+}
+
+.container-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 1px 10px rgb(0, 0, 0);
+  border: 1px solid rgb(220, 102, 249);
+}
+
+button:nth-child(1) {
+  padding: 1em;
+  background-color: #0e6cff;
+  border-radius: 7px;
+  border: none;
+  color: #f4f4f4;
+}
+
+button:nth-child(2) {
+  padding: 1em;
+  background-color: #ff8700;
+  border-radius: 7px;
+  border: none;
+  color: #f4f4f4;
+}
+
+button:nth-child(3) {
+  padding: 1em;
+  background-color: #4caf50;
+  border-radius: 7px;
+  border: none;
+  color: #f4f4f4;
+}
+
+.container div h1,
+.container div p {
+  animation: fadeIn 2s ease 1 forwards;
+}
+
+.container div button:nth-child(1) {
+  animation: fadeIn 2s ease 1 forwards;
+}
+
+.container div button:nth-child(2) {
+  opacity: 0;
+  animation: fadeInButtons 0.5s ease-out 1s 1 forwards;
+}
+
+.container div button:nth-child(3) {
+  opacity: 0;
+  animation: fadeInButtons 0.5s ease-out 1.2s 1 forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: 0;
+  }
+  50% {
+    opacity: 0.5;
+    position: relative;
+    top: 10px;
+  }
+  100% {
+    opacity: 1;
+    position: static;
+    top: -10px;
+  }
+}
+@keyframes fadeInButtons {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header .container .container-img {
+  opacity: 0;
+  width: 35%;
+  position: absolute;
+  right: -50px;
+  top: 60px;
+  animation: fadeInImg 1s ease 0.7s 1 forwards;
+}
+
+@keyframes fadeInImg {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 60px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+main {
+  padding: 1em;
+}
+
+main .main-div {
+  display: flex;
+  gap: 10px;
+}
+
+.container-img-main {
+  width: 50%;
+}
+
+.container-img-main img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
