@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina BootStrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/screenassets/assets/logo.svg"
+              alt="Bootstrap"
+              width="30"
+              height="24"
+            />
+          </a>
+
+          <div class="d-flex gap-2 order-lg-last">
+            <i
+              id="campanella"
+              class="bi bi-bell bg-dark-subtle p-3 rounded-circle d-flex align-items-center justify-content-center"
+            ></i>
+            <img
+              src="assets/screenassets/assets/avatar-1.jpg"
+              class="rounded-circle avatar"
+              alt="avatar1"
+            />
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Browse
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Landings
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- avatar e campanella -->
+      </nav>
+    </header>
+    <main>
+      <div
+        class="container-fluid bg-danger pt-4 px-4 d-flex flex-column flex-lg-row px-lg-5 mb-5"
+      >
+        <div class="d-flex flex-column">
+          <h1 class="text-white">Welcome Web Students!</h1>
+          <p class="text-white-50">
+            Hand-picked Instructor and expertly crafted courses, designed for
+            the modern students and entrepeneur.
+          </p>
+          <div class="d-flex mb-5">
+            <button class="btn btn-success py-2 hero-button">
+              Browse Courses
+            </button>
+            <button class="btn btn-light hero-button">
+              Are You Instructor?
+            </button>
+          </div>
+        </div>
+        <img src="assets/screenassets/assets/hero-img.png" alt="hero image" />
+      </div>
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div class="col-12 col-lg-4 d-flex align-items-center gap-3">
+            <div class="icona">
+              <i
+                class="bi bi-camera-video p-3 bg-warning-subtle rounded-circle d-flex align-items-center justify-content-center"
+              ></i>
+            </div>
+            <div class="flex flex-column">
+              <p class="h5 p-0 m-0">30,000 online courses</p>
+              <p class="p-0 m-0 text-black-50">
+                Enjoy a variety of fresh topics
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex align-items-center gap-3">
+            <div class="icona">
+              <i
+                class="bi bi-camera-video p-3 bg-warning-subtle rounded-circle d-flex align-items-center justify-content-center"
+              ></i>
+            </div>
+            <div class="flex flex-column">
+              <p class="h5 p-0 m-0">Expert instruction</p>
+              <p class="p-0 m-0 text-black-50">
+                Find the right instructor for you
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex align-items-center gap-3">
+            <div class="icona">
+              <i
+                class="bi bi-camera-video p-3 bg-warning-subtle rounded-circle d-flex align-items-center justify-content-center"
+              ></i>
+            </div>
+            <div class="flex flex-column">
+              <p class="h5 p-0 m-0">30,000 online courses</p>
+              <p class="p-0 m-0 text-black-50">
+                Enjoy a variety of fresh topics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="big-container">
+        <div class="container mt-5">
+          <h2>Recommended to you</h2>
+          <div class="row">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-graphql.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    GraphQL: introduction to graphQL for beginners
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-javascript.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    A complete Beginner's Guide to Javascript
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-lg-flex">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-node.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Beginning Node.js, Express & MongoDB Development
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-lg-flex">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-laravel.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Laravel: The Ultimate Beginner's Guide to Learn
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <h2>Most Popular</h2>
+          <div class="row">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-html.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    HTML Full Course - Build a Website Tutorial
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-javascript.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    A complete Beginner's Guide to Javascript
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-lg-flex">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-node.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Beginning Node.js, Express & MongoDB Development
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-lg-flex">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-react.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    How to easily create a website with React
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <h2>Trending</h2>
+          <div class="row">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-gatsby.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Revolutionize how you build the web
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-html.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    HTML Full Course - Build a Website Tutorial
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-lg-flex">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-node.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Beginning Node.js, Express & MongoDB Development
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col d-none d-lg-flex">
+              <div class="card h-100">
+                <img
+                  src="assets/screenassets/assets/course-laravel.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    Laravel: The Ultimate Beginner's Guide to Learn
+                  </h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">
+                    <span><i class="bi bi-clock"></i></span> 2h 40m
+                    <span><i class="bi bi-reception-4"></i></span> Advance
+                  </h6>
+                  <p class="card-text">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-half"></i><i class="bi bi-star"></i
+                    ><i class="bi bi-star"></i> 2.5
+                    <span class="text-black-50">(1500)</span>
+                  </p>
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="h4 m-0 p-0">&dollar;500</p>
+                    <del class="text-black-50">&dollar;600</del>
+                  </div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      class="avatar rounded-circle"
+                      src="assets/screenassets/assets/avatar-2.jpg"
+                      alt="avatar2"
+                    />
+                    <p class="p0 m-0 text-black-50">Brooklin Simmons</p>
+                  </div>
+
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="mt-5 container-fluid d-flex flex-column align-items-center justify-content-center justify-content-lg-end"
+    >
+      <div class="mb-3 mb-lg-0 d-lg-inline">
+        © Marcello Mercanzin. All Rights Reserved.
+      </div>
+      <div class="d-lg-flex">
+        <ul class="d-flex m-0 p-0 gap-5">
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Feedback</li>
+          <li>Support</li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
