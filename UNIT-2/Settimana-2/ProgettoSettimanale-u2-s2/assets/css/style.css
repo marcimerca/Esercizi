@@ -91,3 +91,22 @@ footer ul {
   background-color: #000;
   border-color: rgb(135, 135, 135);
 }
+
+/* account */
+
+#main-account {
+  background-color: #f3f3f3;
+}
+
+#main-account h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.testo-sottotitolo {
+  font-size: 1.2rem;
+}
+
+#cancel-button {
+  background-image: linear-gradient(#eaeaea, #d4d4d4) !important;
+}

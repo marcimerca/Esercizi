@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body id="body-account">
     <header class="mb-3">
       <nav id="nav-bar" class="navbar navbar-expand-lg">
         <div class="container-fluid p-0">
@@ -99,7 +99,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item text-white menu" href="account.html"
+                    <a class="dropdown-item text-white menu" href="#"
                       >Account</a
                     >
                   </li>
@@ -120,115 +120,112 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div class="container d-flex justify-content-center flex-column profile">
-        <h1 class="border-bottom border-secondary text-center">Edit Profile</h1>
-        <div class="contenitore-big d-flex flex-column flex-lg-row gap-3">
-          <div class="text-center">
-            <img width="110px" src="assets/images/avatar.png" alt="avatar" />
+    <main id="main-account" class="p-5">
+      <h1 class="border-bottom border-secondary-subtle pb-3">Account</h1>
+      <div class="d-flex flex-column gap-2 flex-md-row align-items-md-center">
+        <div class="d-flex flex-column testo-sottotitolo">
+          <div class="text-secondary">MEMBERSHIP &amp; BILLING</div>
+          <button
+            id="cancel-button"
+            class="btn btn-dark rounded-0 border-0 text-black py-2 px-3 testo-piccolo align-self-start"
+          >
+            Cancel Membership
+          </button>
+        </div>
+
+        <div
+          class="d-flex flex-row justify-content-between w-100 border-bottom border-secondary-subtle pb-4 mb-3"
+        >
+          <div class="d-flex flex-column gap-2">
+            <div class="fw-bold testo-piccolo">Epicoder1@gmail.com</div>
+            <div class="text-secondary testo-piccolo">Password: ******</div>
+            <div class="text-secondary testo-piccolo">Phone: 3290364721</div>
           </div>
-          <div class="d-flex flex-column gap-3">
-            <input
-              type="text"
-              placeholder="Nome..."
-              class="bg-secondary text-white form-control border-0 rounded-0 p-2"
+          <div class="d-flex flex-column gap-2 gx-md-5">
+            <a href="javascript:void(0)" class="testo-piccolo text-end"
+              >Change account email</a
+            >
+            <a href="javascript:void(0)" class="testo-piccolo text-end"
+              >Change password</a
+            >
+            <a href="javascript:void(0)" class="testo-piccolo text-end"
+              >Change phone number</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between border-bottom border-secondary-subtle pb-4 mb-3"
+      >
+        <div
+          class="d-flex flex-column flex-md-row gap-md-2 align-items-md-start"
+        >
+          <div>
+            <img
+              width="80px"
+              src="assets/images/PayPal.svg.png"
+              alt="paypal logo"
             />
-            <div class="text-secondary">Language:</div>
-            <div class="dropdown border-bottom border-secondary pb-4">
-              <button
-                class="btn btn-outline-light dropdown-toggle rounded-0 px-4"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                English
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Italian</a></li>
-                <li><a class="dropdown-item" href="#">Spanish</a></li>
-                <li><a class="dropdown-item" href="#">English</a></li>
-              </ul>
-            </div>
-            <div
-              class="border-bottom border-secondary pb-4 d-flex flex-column gap-3"
-            >
-              <div class="text-secondary">Maturity Settings:</div>
-              <button
-                class="btn btn-dark rounded-0 px-4 fw-bold"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                ALL MATURITY SETTINGS
-              </button>
-              <div class="text-white testo-piccolo">
-                Show files for all maturity settings for this profile.
-              </div>
-              <button
-                type="button"
-                class="btn btn-outline-secondary rounded-0 w-50 p-1 px-2 testo-piccolo"
-              >
-                EDIT
-              </button>
-            </div>
-            <div
-              class="border-bottom border-secondary pb-4 d-flex flex-column gap-3"
-            >
-              <div class="text-secondary">Autoplay Controls:</div>
-              <div
-                class="form-check d-flex align-items-center justify-content-center gap-3"
-              >
-                <input
-                  class="form-check-input check-item rounded-0"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label
-                  class="form-check-label text-white testo-piccolo w-50"
-                  for="flexCheckDefault"
-                >
-                  Autoplay next episode in a series on all devices
-                </label>
-              </div>
-              <div
-                class="form-check d-flex align-items-center justify-content-center gap-3"
-              >
-                <input
-                  class="form-check-input rounded-0 check-item"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                />
-                <label
-                  class="form-check-label text-white testo-piccolo w-50"
-                  for="flexCheckChecked"
-                >
-                  Autoplay next episode in a series on all devices
-                </label>
-              </div>
-            </div>
-            <div class="d-flex flex-column gap-0 align-items-start">
-              <button
-                type="button"
-                class="btn btn-outline-secondary rounded-0 p-1 px-4"
-              >
-                SAVE
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary rounded-0 p-1 px-4"
-              >
-                CANCEL
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary rounded-0 p-1 px-5 px-lg-4"
-              >
-                DELETE PROFILE
-              </button>
-            </div>
           </div>
+          <div class="fw-bold testo-piccolo">Epicoder1@gmail.com</div>
+        </div>
+        <div class="d-flex flex-column gap-2 gx-md-5">
+          <a href="javascript:void(0)" class="testo-piccolo text-end"
+            >Update payment Info</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo text-end"
+            >Billing details</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo text-end"
+            >Redeem giftcard or promo code</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo text-end"
+            >Where to buy gift cards?</a
+          >
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between border-bottom border-secondary-subtle pb-4 align-items-end align-items-md-center mb-3"
+      >
+        <div
+          class="d-flex flex-column testo-sottotitolo flex-md-row gap-md-2 align-items-md-center"
+        >
+          <div class="text-secondary">PLAN DETAILS</div>
+          <div class="fw-bold testo-piccolo">
+            Standard <i class="bi bi-badge-hd"></i>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <a href="javascript:void(0)" class="testo-piccolo text-end"
+            >Change Plan</a
+          >
+        </div>
+      </div>
+      <div
+        class="d-flex flex-column border-bottom border-secondary-subtle flex-md-row gap-md-5 pb-4 mb-3"
+      >
+        <div class="d-flex flex-column testo-sottotitolo flex-md-row gap-md-2">
+          <div class="text-secondary">SETTINGS</div>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <a href="javascript:void(0)" class="testo-piccolo"
+            >Parental Controls</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo"
+            >Test Participation</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo"
+            >Manage download devices</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo"
+            >Activate a device</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo"
+            >Recent device streaming activity</a
+          >
+          <a href="javascript:void(0)" class="testo-piccolo"
+            >Signout all devices</a
+          >
         </div>
       </div>
     </main>
