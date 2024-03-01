@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="mb-3">
+      <nav id="nav-bar" class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/netflix_logo.png" alt="Netflix logo" width="120" />
+          </a>
+          <button
+            class="navbar-toggler border border-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i id="hamburgher" class="bi bi-list text-white-50"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-lg-between"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white-50"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="#">My List</a>
+              </li>
+            </ul>
+            <div class="contenitore-icone d-flex gap-4 align-items-center">
+              <i class="bi bi-search text-white-50"></i>
+              <div class="text-white-50">KIDS</div>
+              <i class="bi bi-bell-fill text-white-50"></i>
+              <div class="btn-group dropstart">
+                <a
+                  class="btn dropdown-toggle text-white-50"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    width="35px"
+                    src="assets/images/avatar.png"
+                    alt="profile"
+                  />
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-start bg-black">
+                  <li>
+                    <a class="dropdown-item text-white menu" href="profile.html"
+                      ><img
+                        width="35px"
+                        src="assets/images/avatar.png"
+                        alt="profile"
+                      />
+                      Epicoder #1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white menu" href="profile.html"
+                      >Manage profiles</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white menu" href="#"
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white menu" href="#"
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white menu" href="#"
+                      >Sign Out Netflix</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container d-flex justify-content-center flex-column profile">
+        <h1 class="border-bottom border-secondary text-center">Edit Profile</h1>
+        <div class="contenitore-big d-flex flex-column flex-lg-row gap-3">
+          <div class="text-center">
+            <img width="110px" src="assets/images/avatar.png" alt="avatar" />
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <input
+              type="text"
+              placeholder="Nome..."
+              class="bg-secondary text-white form-control border-0 rounded-0 p-2"
+            />
+            <div class="text-secondary">Language:</div>
+            <div class="dropdown border-bottom border-secondary pb-4">
+              <button
+                class="btn btn-outline-light dropdown-toggle rounded-0 px-4"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </div>
+            <div
+              class="border-bottom border-secondary pb-4 d-flex flex-column gap-3"
+            >
+              <div class="text-secondary">Maturity Settings:</div>
+              <button
+                class="btn btn-dark rounded-0 px-4 fw-bold"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ALL MATURITY SETTINGS
+              </button>
+              <div class="text-white testo-piccolo">
+                Show files for all maturity settings for this profile.
+              </div>
+              <button
+                type="button"
+                class="btn btn-outline-secondary rounded-0 w-50 p-1 px-2 testo-piccolo"
+              >
+                EDIT
+              </button>
+            </div>
+            <div
+              class="border-bottom border-secondary pb-4 d-flex flex-column gap-3"
+            >
+              <div class="text-secondary">Autoplay Controls:</div>
+              <div
+                class="form-check d-flex align-items-center justify-content-center gap-3"
+              >
+                <input
+                  class="form-check-input check-item rounded-0"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label text-white testo-piccolo w-50"
+                  for="flexCheckDefault"
+                >
+                  Autoplay next episode in a series on all devices
+                </label>
+              </div>
+              <div
+                class="form-check d-flex align-items-center justify-content-center gap-3"
+              >
+                <input
+                  class="form-check-input rounded-0 check-item"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label
+                  class="form-check-label text-white testo-piccolo w-50"
+                  for="flexCheckChecked"
+                >
+                  Autoplay next episode in a series on all devices
+                </label>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-0 align-items-start">
+              <button
+                type="button"
+                class="btn btn-outline-secondary rounded-0 p-1 px-4"
+              >
+                SAVE
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary rounded-0 p-1 px-4"
+              >
+                CANCEL
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary rounded-0 p-1 px-5 px-lg-4"
+              >
+                DELETE PROFILE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- separazione -->
+
+      <!-- <div class="container profile">
+        <h1 class="border-bottom border-secondary text-center w-50 mx-auto">
+          Edit Profile
+        </h1>
+        <div class="row">
+          <div class="col w-100"></div>
+          <div class="col-12 col-md-6 mx-auto text-center">
+            <img width="130px" src="assets/images/avatar.png" alt="avatar" />
+          </div>
+          <div class="col-12 col-md-6 mx-auto">
+            <input
+              type="text"
+              placeholder="Nome..."
+              class="bg-secondary text-white form-control border-0 rounded-0 w-50"
+            />
+            <div class="text-secondary rounded-0">Language:</div>
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-light dropdown-toggle rounded-0 w-75"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Italian</a></li>
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col w-100"></div>
+        </div>
+      </div> -->
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

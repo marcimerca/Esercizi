@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#nav-bar,
+main,
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#hamburgher {
+  font-size: 30px;
+}
+.menu:hover {
+  background-color: rgb(135, 135, 135);
+}
+
+#tv-title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.right-icons i {
+  font-size: 18px;
+}
+.right-icons i:hover {
+  background-color: rgb(135, 135, 135);
+}
+
+.title-section {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.freccia {
+  font-size: 35px;
+  color: white !important;
+  filter: brightness(150%);
+}
+
+.footer-container i {
+  font-size: 25px;
+}
+
+footer ul {
+  width: fit-content;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.transform-poster:hover {
+  transform: scale(1.08);
+  opacity: 1 !important;
+}
+
+/* pagina profile */
+
+.profile h1 {
+  font-size: 3.2rem;
+  color: white;
+  font-weight: 300;
+}
+.profile input,
+.profile div {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.profile {
+  width: 40%;
+}
+
+.testo-piccolo {
+  font-size: 0.9rem !important;
+}
+
+.check-item {
+  font-size: 2rem !important;
+  background-color: black;
+}
+.form-check-input {
+  background-color: #000;
+  border-color: rgb(135, 135, 135);
+  color: red !important;
+}
+
+.form-check-input:checked {
+  background-color: #000;
+  border-color: rgb(135, 135, 135);
+}
