@@ -30,16 +30,12 @@ main,
 .right-icons i:hover {
   background-color: rgb(135, 135, 135);
 }
-
-.title-section {
-  font-size: 1.5rem;
+.title-section,
+.profile h1 {
   font-weight: 300;
 }
-
-.freccia {
-  font-size: 35px;
-  color: white !important;
-  filter: brightness(150%);
+.title-section {
+  font-size: 1.5rem;
 }
 
 .footer-container i {
@@ -57,12 +53,9 @@ footer ul {
   opacity: 1 !important;
 }
 
-/* pagina profile */
-
 .profile h1 {
   font-size: 3.2rem;
   color: white;
-  font-weight: 300;
 }
 .profile input,
 .profile div {
@@ -93,9 +86,15 @@ footer ul {
 }
 
 /* account */
-
+#body-account {
+  background-color: #f3f3f3;
+}
+#body-account header {
+  background-color: black;
+}
 #main-account {
   background-color: #f3f3f3;
+  width: 100%;
 }
 
 #main-account h1 {
