@@ -11,9 +11,13 @@ class User {
       console.log(
         `${this.firstName} ha ${this.age} anni ed è più vecchio di ${altroUtente.firstName}, che ha ${altroUtente.age} anni. `
       );
+    } else if (this.age < altroUtente.age) {
+      console.log(
+        `${this.firstName} ha ${this.age} anni ed è più giovane di ${altroUtente.firstName}, che ha ${altroUtente.age} anni. `
+      );
     } else {
       console.log(
-        `${altroUtente.firstName} ha ${altroUtente.age} anni ed è più vecchio di ${this.firstName}, che ha ${this.age} anni.`
+        `${altroUtente.firstName} e ${this.firstName}  hanno  la stessa età, ${altroUtente.age} anni.`
       );
     }
   }
@@ -22,8 +26,10 @@ const user1 = new User("Marcello", "Mercanzin", 27, "Vicenza");
 console.log(user1);
 const user2 = new User("Zlatan", "Ibrahimovic", 42, "Milano");
 const user3 = new User("Brad", "Pitt", 60, "USA");
+const user4 = new User("John", "Dave", 60, "USA");
 user1.confronta(user2);
 user2.confronta(user3);
+user3.confronta(user4);
 
 // esercizio 2
 
