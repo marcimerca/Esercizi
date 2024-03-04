@@ -13,7 +13,7 @@ class User {
       );
     } else if (this.age < altroUtente.age) {
       console.log(
-        `${this.firstName} ha ${this.age} anni ed è più giovane di ${altroUtente.firstName}, che ha ${altroUtente.age} anni. `
+        `${altroUtente.firstName} ha ${altroUtente.age} anni ed è vecchio di ${this.firstName}, che ha ${this.age} anni. `
       );
     } else {
       console.log(
