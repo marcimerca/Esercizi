@@ -67,3 +67,8 @@ btnAggiungi.addEventListener("click", function () {
   listItem.innerText = `Pet Name: ${newPet.petName}, Owner Name: ${newPet.ownerName}, Species: ${newPet.species}, Breed: ${newPet.breed}`;
   listaPets.appendChild(listItem);
 });
+
+const pet1 = new Pet("axel", "marcello", "cane", "golden");
+const pet2 = new Pet("tortuga", "marcello", "tartaruga", "d'acqua");
+
+console.log(pet1.confrontaPadrone(pet2));
