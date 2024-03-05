@@ -14,3 +14,18 @@ function incrementaCounter() {
   let counterAggiornato = sessionStorage.getItem("counterValue");
   stampaCounter.innerText = counterAggiornato;
 }
+
+// versione prof
+
+// let timePassed = sessionStorage.getItem("count")
+//   ? parseInt(sessionStorage.getItem("count"))
+//   : 0;
+
+// const conta = () => {
+//   timePassed++;
+//   document.getElementById("stampaCounter").innerText =
+//    timePassed + " secondi di sessione aperta";
+//   sessionStorage.setItem("count", timePassed);
+// };
+
+// setInterval(conta, 1000);
