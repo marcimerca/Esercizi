@@ -41,18 +41,3 @@ function scarta(index) {
   books.splice(index, 1);
   showBooks();
 }
-let otherBooks = [];
-fetch("https://striveschool-api.herokuapp.com/books")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Errore");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    otherBooks = data;
-    console.log(otherBooks);
-  })
-  .catch((err) => {
-    console.log("errore", err);
-  });
