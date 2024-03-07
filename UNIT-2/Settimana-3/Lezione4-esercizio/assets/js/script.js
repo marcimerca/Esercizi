@@ -40,7 +40,7 @@ function displayImages() {
 
     colCard.innerHTML = `<div class="card mb-4 shadow-sm">
                 <img onclick="location.href = 'dettaglio.html'"
-                  src='${element.src.small}'
+                  src='${element.src.original}'
                   class="bd-placeholder-img card-img-top"
                 />
                 <div class="card-body">
