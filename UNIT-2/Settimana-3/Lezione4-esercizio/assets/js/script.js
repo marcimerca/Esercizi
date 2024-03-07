@@ -44,7 +44,7 @@ function displayImages() {
                   class="bd-placeholder-img card-img-top"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Lorem Ipsum</h5>
+                  <h5 class="card-title">${element.alt}</h5>
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
@@ -56,7 +56,7 @@ function displayImages() {
                     <div class="btn-group">
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary"
+                        class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal-${element.id}"
                       >
                         View
                       </button>
@@ -70,7 +70,28 @@ function displayImages() {
                     <small class="text-muted">${element.id}</small>
                   </div>
                 </div>
-              </div>`;
+              </div>
+<!-- Modal -->
+<div class="modal fade" id="modal-${element.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">${element.alt}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img 
+                  src='${element.src.small}'
+                  class="bd-placeholder-img card-img-top"
+                />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>`;
     mainRow.appendChild(colCard);
   });
 }
