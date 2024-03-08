@@ -5,16 +5,6 @@ const params = new URLSearchParams(location.search);
 const id = params.get("id"); //ottengo l'id della pagina
 let product = {};
 
-//parte params modifica, elimina
-
-// Appena apri la pagina gli fai leggere gli url params
-// const params = new URLSearchParams(location.search)
-//     const id = params.get('id')
-// if (id) scrivi il codice per fare la get dell'id che ti è arrivato, per popolare i campi del form con i valori dell'oggetto, per intercettare i nuovo valori del form e per fare la put con gli eventuali valori cambiati
-// if (!id) scrivi il codice per intercettare i valori del form, creare l'oggetto che deve partire e fare la post
-
-// const params = new URLSearchParams(location.search);
-// const id = params.get("id");
 window.addEventListener("load", init);
 function init() {
   loadProduct();
