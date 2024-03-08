@@ -20,6 +20,13 @@ const btnReset = document.getElementById("btnReset");
 const form = document.getElementById("form");
 const titleForm = document.getElementById("title-form");
 
+btnReset.addEventListener("click", function (e) {
+  const result = window.confirm("Sei sicuro di voler cancellare il form?");
+  if (!result) {
+    e.preventDefault();
+  }
+});
+
 const loadProduct = async () => {
   if (id) {
     try {
@@ -51,11 +58,21 @@ function fillForm() {
   btnDelete.classList.add("btn", "btn-danger");
   btnDelete.innerText = "Delete";
   form.appendChild(btnDelete);
-  btnDelete.addEventListener("click", function () {
-    deleteProduct();
+  btnDelete.addEventListener("click", function (e) {
+    const result = window.confirm(
+      "Sei sicuro di voler cancellare il prodotto?"
+    );
+    if (result) {
+      // Se l'utente conferma, esegui deleteProduct()
+      deleteProduct();
+    } else {
+      // Se l'utente annulla, impedi il comportamento predefinito del pulsante
+      e.preventDefault();
+    }
   });
 
-  btnPostPut.addEventListener("click", function () {
+  btnPostPut.addEventListener("click", function (e) {
+    e.preventDefault();
     modifyProduct();
   });
 }
@@ -76,6 +93,7 @@ async function modifyProduct() {
         "Content-Type": "application/json",
       },
     });
+    window.location.href = "index.html";
   } catch (error) {
     console.log(error);
   }
@@ -104,14 +122,18 @@ if (!id) {
           "Content-Type": "application/json",
         },
       });
-      const newProduct = await response.json();
-      productsList.push(newProduct);
+      nameProduct.value = "";
+      brandProduct.value = "";
+      urlImageProduct.value = "";
+      priceProduct.value = "";
+      descriptionProduct.value = "";
+      window.location.href = "index.html";
     } catch (error) {
       console.log(error);
     }
   }
 }
-
+// delete
 async function deleteProduct() {
   try {
     const response = await fetch(baseURL + id, {
@@ -121,6 +143,7 @@ async function deleteProduct() {
         "Content-Type": "application/json",
       },
     });
+    window.location.href = "index.html";
   } catch (error) {
     console.log(error);
   }
