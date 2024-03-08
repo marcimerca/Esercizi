@@ -58,93 +58,18 @@ const loadProducts = async () => {
 function displayProducts() {
   for (let i = 0; i < productsList.length; i++) {
     let colCard = document.createElement("div");
-    colCard.classList.add("col");
-    colCard.innerHTML = `<div class="card" style="width: 18rem;">
+    colCard.classList.add("col-4");
+    colCard.innerHTML = `<div class="card h-100 d-flex flex-column" style="width: 18rem;">
     
-  <img src="${productsList[i].imageUrl}" class="card-img-top" alt="...">
+  <img src="${productsList[i].imageUrl}" class="card-img-top img-fluid alt="...">
   <div class="card-body">
     <h5 class="card-title">${productsList[i].name}</h5>
     <p class="card-text">${productsList[i].description}</p>
     <a href="./form.html?id=${productsList[i]._id}" class="btn btn-warning">Modifica</a>
     <a href="./details.html?id=${productsList[i]._id}" class="btn btn-primary">Scopri di più</a>
   </div>
+  
 </div>`;
     mainRow.appendChild(colCard);
   }
 }
-
-// // parte relativa al form
-
-// const nameProduct = document.getElementById("nameProduct");
-// const brandProduct = document.getElementById("brand");
-// const priceProduct = document.getElementById("price");
-// const urlImageProduct = document.getElementById("urlImage");
-// const descriptionProduct = document.getElementById("description");
-// // post con bottone su form
-
-// btnPost.addEventListener("click", function () {
-//   postNewProduct();
-// });
-
-// async function postNewProduct() {
-//   try {
-//     const response = await fetch(baseURL, {
-//       method: "POST",
-//       body: JSON.stringify({
-//         name: nameProduct.value,
-//         brand: brandProduct.value,
-//         imageUrl: urlImageProduct.value,
-//         price: priceProduct.value,
-//         description: descriptionProduct.value,
-//       }),
-//       headers: {
-//         Authorization: auth,
-//         "Content-Type": "application/json",
-//       },
-//     });
-//     const newProduct = await response.json();
-//     productsList.push(newProduct);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-//parte params modifica, elimina
-
-// Appena apri la pagina gli fai leggere gli url params
-// const params = new URLSearchParams(location.search)
-//     const id = params.get('id')
-// if (id) scrivi il codice per fare la get dell'id che ti è arrivato, per popolare i campi del form con i valori dell'oggetto, per intercettare i nuovo valori del form e per fare la put con gli eventuali valori cambiati
-// if (!id) scrivi il codice per intercettare i valori del form, creare l'oggetto che deve partire e fare la post
-
-// const params = new URLSearchParams(location.search);
-// const id = params.get("id");
-
-// parte aggiunta da script form
-
-// const params = new URLSearchParams(location.search);
-// const id = params.get("id"); //ottengo l'id della pagina
-// const nameProduct = document.getElementById("nameProduct");
-// const brandProduct = document.getElementById("brand");
-// const priceProduct = document.getElementById("price");
-// const urlImageProduct = document.getElementById("urlImage");
-// const descriptionProduct = document.getElementById("description");
-// const btnPostPut = document.getElementById("btnPostPut");
-
-// const loadProduct = async () => {
-//   if (id) {
-//     try {
-//       const response = await fetch(baseURL + id, {
-//         headers: {
-//           Authorization: auth,
-//           "Content-Type": "application/json",
-//         },
-//       });
-//       product = await response.json();
-//       console.log(product);
-//       fillForm();
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   }
-// };

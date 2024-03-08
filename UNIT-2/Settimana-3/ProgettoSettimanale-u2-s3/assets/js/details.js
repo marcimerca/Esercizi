@@ -37,7 +37,7 @@ function displayProductDetails() {
     "justify-content-around",
     "align-items-top"
   );
-  col.innerHTML = ` <img  src="${productDetails.imageUrl}" class="card-img-top img-fluid w-50  border-end border-black" alt="${productDetails.name}">
+  col.innerHTML = ` <img  src="${productDetails.imageUrl}" class="card-img-top img-fluid w-50 p-4 border-end border-black" alt="${productDetails.name}">
   <div class=" d-flex flex-column align-items-start gap-2 ms-4">
   <p>${productDetails.brand}</p>
   <h2>${productDetails.name}</h2>

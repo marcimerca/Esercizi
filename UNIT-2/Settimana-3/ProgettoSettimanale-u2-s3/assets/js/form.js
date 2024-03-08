@@ -63,10 +63,8 @@ function fillForm() {
       "Sei sicuro di voler cancellare il prodotto?"
     );
     if (result) {
-      // Se l'utente conferma, esegui deleteProduct()
       deleteProduct();
     } else {
-      // Se l'utente annulla, impedi il comportamento predefinito del pulsante
       e.preventDefault();
     }
   });
