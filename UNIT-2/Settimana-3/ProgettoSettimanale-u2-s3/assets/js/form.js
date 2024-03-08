@@ -18,6 +18,7 @@ const descriptionProduct = document.getElementById("description");
 const btnPostPut = document.getElementById("btnPostPut");
 const btnReset = document.getElementById("btnReset");
 const form = document.getElementById("form");
+const titleForm = document.getElementById("title-form");
 
 const loadProduct = async () => {
   if (id) {
@@ -38,6 +39,7 @@ const loadProduct = async () => {
 };
 
 function fillForm() {
+  titleForm.innerText = "Edit Product";
   nameProduct.value = product.name;
   brandProduct.value = product.brand;
   urlImageProduct.value = product.imageUrl;
@@ -81,6 +83,7 @@ async function modifyProduct() {
 
 // funzione per la post nuova
 if (!id) {
+  titleForm.innerText = "Add Product";
   btnPostPut.addEventListener("click", function () {
     postNewProduct();
   });
