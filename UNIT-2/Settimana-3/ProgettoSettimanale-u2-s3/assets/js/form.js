@@ -29,8 +29,6 @@ const btnPostPut = document.getElementById("btnPostPut");
 const btnReset = document.getElementById("btnReset");
 const form = document.getElementById("form");
 
-// post con bottone su form
-
 const loadProduct = async () => {
   if (id) {
     try {
@@ -56,6 +54,14 @@ function fillForm() {
   priceProduct.value = product.price;
   descriptionProduct.value = product.description;
   btnPostPut.innerText = "Modify";
+  btnReset.style.display = "none";
+  let btnDelete = document.createElement("button");
+  btnDelete.classList.add("btn", "btn-danger");
+  btnDelete.innerText = "Delete";
+  form.appendChild(btnDelete);
+  btnDelete.addEventListener("click", function () {
+    deleteProduct();
+  });
 
   btnPostPut.addEventListener("click", function () {
     modifyProduct();
@@ -113,7 +119,16 @@ if (!id) {
   }
 }
 
-// let btnDelete = document.createElement("button");
-// btnDelete.classList.add("btn", "btn-danger");
-// btnDelete.innerText = "Delete";
-// form.appendChild(btnDelete);
+async function deleteProduct() {
+  try {
+    const response = await fetch(baseURL + id, {
+      method: "DELETE",
+      headers: {
+        Authorization: auth,
+        "Content-Type": "application/json",
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
