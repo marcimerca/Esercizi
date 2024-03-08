@@ -56,16 +56,9 @@ function fillForm() {
   priceProduct.value = product.price;
   descriptionProduct.value = product.description;
   btnPostPut.innerText = "Modify";
-  let btnDelete = document.createElement("button");
-  btnDelete.classList.add("btn", "btn-danger");
-  btnDelete.innerText = "Delete";
-  form.appendChild(btnDelete);
-  btnReset.style.display = "none";
+
   btnPostPut.addEventListener("click", function () {
     modifyProduct();
-  });
-  btnDelete.addEventListener("click", function () {
-    deleteProduct();
   });
 }
 
@@ -120,18 +113,7 @@ if (!id) {
   }
 }
 
-// funzione delete
-
-async function deleteProduct() {
-  try {
-    const response = await fetch(baseURL + id, {
-      method: "DELETE",
-      headers: {
-        Authorization: auth,
-        "Content-Type": "application/json",
-      },
-    });
-  } catch (error) {
-    console.log(error);
-  }
-}
+// let btnDelete = document.createElement("button");
+// btnDelete.classList.add("btn", "btn-danger");
+// btnDelete.innerText = "Delete";
+// form.appendChild(btnDelete);
