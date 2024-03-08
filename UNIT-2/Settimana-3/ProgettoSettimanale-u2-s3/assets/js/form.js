@@ -59,9 +59,7 @@ function fillForm() {
   btnDelete.innerText = "Delete";
   form.appendChild(btnDelete);
   btnDelete.addEventListener("click", function (e) {
-    const result = window.confirm(
-      "Sei sicuro di voler cancellare il prodotto?"
-    );
+    const result = window.confirm("Sei sicuro di voler eliminare il prodotto?");
     if (result) {
       deleteProduct();
     } else {
