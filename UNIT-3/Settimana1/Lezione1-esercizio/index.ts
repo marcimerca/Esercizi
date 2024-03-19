@@ -41,8 +41,8 @@ class UserNew1 implements Phone {
       );
     }
   }
-  chiama404(): number {
-    return this.credito;
+  chiama404() {
+    return this.credito.toFixed(2);
   }
   getNumeroChiamata() {
     return this.numeroChiamate;
@@ -56,4 +56,5 @@ let utente1New1 = new UserNew1("Marcello", "Mercanzin", 1, 2);
 console.log(utente1New1);
 console.log(utente1New1.chiama404());
 utente1New1.chiamata(2);
-utente1New1.chiamata(3);
+utente1New1.azzeraChiamate();
+console.log(utente1New1);
