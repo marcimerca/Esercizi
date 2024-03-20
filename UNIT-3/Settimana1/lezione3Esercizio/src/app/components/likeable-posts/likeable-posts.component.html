@@ -7,9 +7,9 @@
           <i class="bi bi-link-45deg"></i>{{ post.title }}</a
         >
         <div>
-          <span class="badge text-bg-secondary">{{ post.tags[0] }}</span>
-          <span class="badge text-bg-secondary">{{ post.tags[1] }}</span>
-          <span class="badge text-bg-secondary">{{ post.tags[2] }}</span>
+          <span *ngFor="let tag of post.tags" class="badge text-bg-secondary">{{
+            tag
+          }}</span>
         </div>
         <h6 class="m-0 mb-2 text-body-secondary">{{ post.reactions }} 👍  </h6>
       </div>

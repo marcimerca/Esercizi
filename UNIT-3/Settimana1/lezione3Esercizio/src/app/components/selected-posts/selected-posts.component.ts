@@ -7,7 +7,7 @@ import { Post } from 'src/app/models/post.interface';
   styleUrls: ['./selected-posts.component.scss'],
 })
 export class SelectedPostsComponent {
-  posts: Post[] = [] || undefined;
+  posts: Post[] = [];
   numPosts: number = 2;
   randomIndex!: number;
 
