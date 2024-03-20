@@ -7,7 +7,7 @@
         Reactions: {{ post.reactions }}
       </h6>
       <p class="card-text">
-        {{ post.body }}
+        {{ post.body.slice(0, 150) }}
       </p>
       <a href="javascript:void(0)" class="card-link">Leggi di più</a>
     </div>
