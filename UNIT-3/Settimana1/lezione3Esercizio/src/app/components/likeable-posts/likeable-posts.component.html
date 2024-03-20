@@ -1,0 +1,33 @@
+<div class="d-flex flex-column bg-body-secondary p-5">
+  <h5>Potrebbero piacerti:</h5>
+  <div *ngFor="let post of posts; let i = index" class="mb-3">
+    <div class="card border-bottom h-100 d-flex flex-column gap-4">
+      <div class="card-body">
+        <a href="javascript:void(0)" class="card-link">
+          <i class="bi bi-link-45deg"></i>{{ post.title }}</a
+        >
+        <div>
+          <span class="badge text-bg-secondary">{{ post.tags[0] }}</span>
+          <span class="badge text-bg-secondary">{{ post.tags[1] }}</span>
+          <span class="badge text-bg-secondary">{{ post.tags[2] }}</span>
+        </div>
+        <h6 class="m-0 mb-2 text-body-secondary">{{ post.reactions }} 👍  </h6>
+      </div>
+    </div>
+  </div>
+  <h5>Vedi anche:</h5>
+  <div>
+    <div class="card border-bottom h-100 d-flex flex-column gap-4">
+      <div class="card-body">
+        <a href="javascript:void(0)" class="card-link">Post attivi</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card border-bottom h-100 d-flex flex-column gap-4">
+      <div class="card-body">
+        <a href="javascript:void(0)" class="card-link">Post inattivi</a>
+      </div>
+    </div>
+  </div>
+</div>

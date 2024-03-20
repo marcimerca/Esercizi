@@ -1,0 +1,15 @@
+<div *ngFor="let post of posts; let i = index">
+  <div class="card border-0 h-100">
+    <div class="card-body">
+      <h6 class="card-subtitle text-info-emphasis mb-1">{{ post.tags }}</h6>
+      <h5 class="card-title fs-3">{{ post.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">
+        Reactions: {{ post.reactions }}
+      </h6>
+      <p class="card-text">
+        {{ post.body }}
+      </p>
+      <a href="javascript:void(0)" class="card-link">Leggi di più</a>
+    </div>
+  </div>
+</div>
