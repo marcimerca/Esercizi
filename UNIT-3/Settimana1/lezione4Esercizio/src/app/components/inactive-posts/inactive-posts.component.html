@@ -9,7 +9,7 @@
             Reactions: {{ post.reactions }}
           </h6>
           <p class="card-text">{{ post.body.slice(0, 150) }}</p>
-          <a [routerLink]="['post', post.id]" class="card-link text-black"
+          <a [routerLink]="['/post', post.id]" class="card-link text-black"
             >Leggi di più</a
           >
         </div>
