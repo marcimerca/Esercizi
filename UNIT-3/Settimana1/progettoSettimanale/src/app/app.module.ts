@@ -47,6 +47,7 @@ const routes: Route[] = [
     AudiComponent,
     FeaturedCarsComponent,
     FooterComponent,
+    Error404Component,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

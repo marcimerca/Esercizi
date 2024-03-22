@@ -1,5 +1,5 @@
 footer {
-  height: 100px;
+  height: 150px;
 }
 
 ul li a {
@@ -8,4 +8,10 @@ ul li a {
 
 ul li a:hover {
   text-decoration: underline;
+}
+
+footer address,
+footer a,
+footer p {
+  font-size: 12px;
 }
