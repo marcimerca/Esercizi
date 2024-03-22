@@ -1,0 +1,62 @@
+<div class="container mt-3 mb-3 text-center">
+  <h1>I nostri marchi</h1>
+  <div class="row gx-2">
+    <div class="col" *ngFor="let carBrandLogo of carBrandsLogo">
+      <img
+        width="150px"
+        class="img-fluid"
+        src="https://listcarbrands.com/wp-content/uploads/{{ carBrandLogo }}"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+<div
+  class="container-fluid d-flex flex-column justify-content-center align-items-center border-top border-bottom p-3"
+>
+  <h1>I nostri modelli</h1>
+  <div
+    id="carouselExampleAutoplaying"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    style="width: 300px"
+  >
+    <div class="carousel-inner">
+      <div
+        class="carousel-item"
+        *ngFor="let car of cars; let i = index"
+        [class.active]="i === 0"
+      >
+        <img
+          src="https://www.kimballstock.com/pix/car/p/{{ car.modelImage }}"
+          class="d-block w-100"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon bg-success"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon bg-success"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

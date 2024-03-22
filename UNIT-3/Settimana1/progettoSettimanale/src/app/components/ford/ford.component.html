@@ -1,0 +1,58 @@
+<main class="mb-5">
+  <div class="container text-center">
+    <h1>{{ fordCars[0].brand }}</h1>
+    <img
+      class="mb-3"
+      src="https://listcarbrands.com/wp-content/uploads/{{
+        fordCars[0].brandLogo
+      }}"
+      alt="logo"
+      width="200px"
+    />
+    <div class="row gy-3">
+      <div class="col-12" *ngFor="let fordCar of fordCars">
+        <div class="d-flex justify-content-center gap-4">
+          <div>
+            <div
+              [ngClass]="{
+                'bg-success': fordCar.available,
+                'bg-danger': !fordCar.available
+              }"
+              class="card"
+              style="width: 30rem"
+            >
+              <img
+                src="https://www.kimballstock.com/pix/car/p/{{
+                  fordCar.modelImage
+                }}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-black">
+                  {{ fordCar.brand }} {{ fordCar.model }}
+                </h5>
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
+                  <span class="badge text-bg-primary"
+                    >Prezzo: {{ fordCar.price }} &euro;</span
+                  >
+                  <span class="badge text-bg-primary"
+                    >Anno: {{ fordCar.year }}</span
+                  >
+                  <span
+                    *ngIf="fordCar.available; vailable"
+                    class="badge text-bg-primary"
+                    >Disponibile: SÌ</span
+                  >
+                  <span *ngIf="!fordCar.available" class="badge text-bg-primary"
+                    >Disponibile: NO</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,39 @@
+<footer class="container-fluid bg-black mt-5 sticky-bottom">
+  <div class="d-flex justify-content-center gap-5 align-items-center h-100">
+    <img src="../../../assets/logo.png" class="img-fluid" alt="" />
+
+    <ul class="m-0 p-0 list-unstyled d-flex gap-3">
+      <li>
+        <a
+          class="text-white link-offset-3"
+          [routerLink]="['/']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Home</a
+        >
+      </li>
+      <li>
+        <a
+          class="text-white link-offset-3"
+          [routerLink]="['/audi']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Audi</a
+        >
+      </li>
+      <li>
+        <a
+          class="text-white link-offset-3"
+          [routerLink]="['/fiat']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Fiat</a
+        >
+      </li>
+    </ul>
+    <div class="text-white">&copy; Marcello Mercanzin</div>
+  </div>
+</footer>

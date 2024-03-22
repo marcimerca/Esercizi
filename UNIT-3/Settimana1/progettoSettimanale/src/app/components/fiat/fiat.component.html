@@ -1,0 +1,58 @@
+<main class="mb-5">
+  <div class="container text-center">
+    <h1>{{ fiatCars[0].brand }}</h1>
+    <img
+      class="mb-3"
+      src="https://listcarbrands.com/wp-content/uploads/{{
+        fiatCars[0].brandLogo
+      }}"
+      alt="logo"
+      width="200px"
+    />
+    <div class="row gy-3">
+      <div class="col-12" *ngFor="let fiatCar of fiatCars">
+        <div class="d-flex justify-content-center gap-4">
+          <div>
+            <div
+              [ngClass]="{
+                'bg-success': fiatCar.available,
+                'bg-danger': !fiatCar.available
+              }"
+              class="card"
+              style="width: 50rem"
+            >
+              <img
+                src="https://www.kimballstock.com/pix/car/p/{{
+                  fiatCar.modelImage
+                }}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-black">
+                  {{ fiatCar.brand }} {{ fiatCar.model }}
+                </h5>
+                <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
+                  <span class="badge text-bg-primary"
+                    >Prezzo: {{ fiatCar.price }} &euro;</span
+                  >
+                  <span class="badge text-bg-primary"
+                    >Anno: {{ fiatCar.year }}</span
+                  >
+                  <span
+                    *ngIf="fiatCar.available; vailable"
+                    class="badge text-bg-primary"
+                    >Disponibile: SÌ</span
+                  >
+                  <span *ngIf="!fiatCar.available" class="badge text-bg-primary"
+                    >Disponibile: NO</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

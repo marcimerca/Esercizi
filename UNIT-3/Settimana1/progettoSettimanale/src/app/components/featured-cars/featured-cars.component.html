@@ -1,0 +1,50 @@
+<div class="container text-center p-3">
+  <h1>Auto in evidenza</h1>
+  <div class="d-flex justify-content-center gap-4">
+    <div *ngFor="let featuredCar of featuredCars">
+      <div
+        [ngClass]="{
+          'bg-success': featuredCar.available,
+          'bg-danger': !featuredCar.available
+        }"
+        class="card"
+        style="width: 18rem"
+      >
+        <img
+          src="https://www.kimballstock.com/pix/car/p/{{
+            featuredCar.modelImage
+          }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title text-black">
+            {{ featuredCar.brand }} {{ featuredCar.model }}
+          </h5>
+          <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
+            <span class="badge text-bg-primary"
+              >Prezzo: {{ featuredCar.price }} &euro;</span
+            >
+            <span class="badge text-bg-primary"
+              >Anno: {{ featuredCar.year }}</span
+            >
+            <span
+              *ngIf="featuredCar.available; vailable"
+              class="badge text-bg-primary"
+              >Disponibile: SÌ</span
+            >
+            <span *ngIf="!featuredCar.available" class="badge text-bg-primary"
+              >Disponibile: NO</span
+            >
+          </div>
+
+          <a
+            [routerLink]="['/', featuredCar.brand.toLowerCase()]"
+            class="btn btn-primary"
+            >Le nostre {{ featuredCar.brand }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
