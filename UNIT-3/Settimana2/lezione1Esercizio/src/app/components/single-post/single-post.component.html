@@ -1,0 +1,30 @@
+<div class="container mt-5" *ngIf="!edit">
+  <div class="row g-1">
+    <div class="col-12" *ngFor="let post of posts">
+      <div class="card border-1">
+        <div class="card-body">
+          <h6 class="card-subtitle text-info-emphasis mb-1"></h6>
+          <h5 class="card-title fs-3">{{ post.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            Reactions: {{ post.reactions }}
+          </h6>
+          <p class="card-text">{{ post.body.slice(0, 150) }}</p>
+          <a class="btn btn-info text-white" (click)="toggleEdit()">EDIT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="edit">
+  <label class="form-label" for="title">Titolo</label>
+  <input class="form-control" type="text" id="title" [(ngModel)]="newTitle" />
+  <label class="form-label" for="title">Testo</label>
+  <input class="form-control" type="text" id="testo" [(ngModel)]="newBody" />
+  <label class="form-label" for="title">Reactions</label>
+
+  <button class="btn btn-success" (click)="toggleEdit()">EDIT</button>
+
+  <div>{{ newTitle }}, {{ newBody }}</div>
+</div>
+
+active: boolean;

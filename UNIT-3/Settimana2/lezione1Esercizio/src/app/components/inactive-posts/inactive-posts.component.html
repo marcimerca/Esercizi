@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row g-1">
+    <div class="col-12" *ngFor="let post of posts">
+      <div class="card border-1 bg-warning" *ngIf="!post.active">
+        <div class="card-body">
+          <h6 class="card-subtitle text-info-emphasis mb-1"></h6>
+          <h5 class="card-title fs-3">{{ post.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            Reactions: {{ post.reactions }}
+          </h6>
+          <p class="card-text">{{ post.body.slice(0, 150) }}</p>
+          <a class="btn btn-info text-black">EDIT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
