@@ -15,8 +15,3 @@ export class ActivePostsComponent implements OnInit {
     this.activePosts = this.postSrv.getActivePosts();
   }
 }
-// this.active = this.activePosts;
-// active!: PostInterface[]
-//  get activePosts(): PostInterface[] {
-//     return this.posts.filter((post) => post.active);
-//   }
