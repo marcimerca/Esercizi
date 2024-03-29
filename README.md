@@ -39,3 +39,11 @@
 ## SETTIMANA 2 - PROGETTO
 
 - Info: il progetto è nella cartella UNIT-2/Settimana-2/ProgettoSettimanale-u2-s2.
+
+## UNIT 3
+
+## SETTIMANA 2 - PROGETTO Angular
+
+- Info: il progetto è nella cartella UNIT-3/Settimana2/progettoSettimanale e nella cartella del progetto nel readMe c'è la descrizione del progetto.
+
+
