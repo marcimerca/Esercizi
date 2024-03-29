@@ -1,4 +1,4 @@
-# ProgettoSettimanale
+# Progetto Settimanale
 
 ## Descrizione per il professore.
 
