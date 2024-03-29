@@ -42,38 +42,3 @@
     </div>
   </div>
 </div>
-
-<!-- 
-<p class="m-0">
-        Assegnato a: {{ getUser(todo.userId)?.firstName }}
-        {{ getUser(todo.userId)?.lastName }}
-      </p> -->
-<!-- 
-<div *ngFor="let todo of todos; let i = index">
-  <div
-    class="form-check border border-black p-4 d-flex flex-column ps-5 justify-content-center"
-    [ngClass]="{ 'bg-success': todo.completed, 'bg-danger': !todo.completed }"
-  >
-    <div>
-      <input
-        [checked]="todo.completed"
-        (change)="onCheckboxChange($event, todo.id)"
-        class="form-check-input fs-4"
-        type="checkbox"
-        [value]="todo.completed"
-        id="flexCheckDefault_{{ todo.id }}"
-      />
-      <label
-        class="form-check-label fw-bold m-0"
-        for="flexCheckDefault_{{ todo.id }}"
-      >
-        {{ todo.todo }}
-      </label>
-    </div>
-
-    <p class="m-0">
-      Assegnato a: {{ getUser(todo.userId)?.firstName }}
-      {{ getUser(todo.userId)?.lastName }}
-    </p>
-  </div>
-</div> -->
