@@ -919,10 +919,4 @@ export class TodoService {
       todo.id === id ? { ...todo, ...data } : todo
     );
   }
-
-  // updatePost(id: number, data: Partial<Post>) {
-  //   this.posts = this.posts.map((post) =>
-  //     post.id === id ? { ...post, ...data } : post
-  //   );
-  // }
 }

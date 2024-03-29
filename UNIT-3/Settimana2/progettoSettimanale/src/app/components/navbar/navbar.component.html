@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active"
+    <a
+      class="navbar-brand text-white"
+      [routerLink]="['/']"
+      routerLinkActive="active"
       >To-Dos</a
     >
     <button
@@ -18,7 +21,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a
-            class="nav-link active"
+            class="nav-link text-white link-offset-3"
             [routerLink]="['/']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
@@ -27,26 +30,28 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link text-white link-offset-3"
             [routerLink]="['/completed']"
             routerLinkActive="active"
-            >See how much we've accomplished!</a
+          >
+            <i class="bi bi-check-square me-2 text-success"></i>See how much
+            we've accomplished!</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link text-white link-offset-3"
             [routerLink]="['/incompleted']"
             routerLinkActive="active"
-            >What's left?</a
+            ><i class="bi bi-x-square me-2 text-danger"></i>What's left?</a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link text-white link-offset-3"
             [routerLink]="['/users']"
             routerLinkActive="active"
-            >By User</a
+            ><i class="bi bi-person me-2 text-primary"></i>By User</a
           >
         </li>
       </ul>

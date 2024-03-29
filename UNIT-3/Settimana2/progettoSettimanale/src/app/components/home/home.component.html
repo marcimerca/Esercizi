@@ -2,7 +2,7 @@
   <h1 class="mt-4">Hey boss, what is my task for the day?</h1>
   <div *ngFor="let todo of todos; let i = index">
     <div
-      class="form-check border border-black p-4 d-flex flex-column ps-5 justify-content-center"
+      class="form-check border border-black p-4 d-flex flex-column ps-5 justify-content-center shadow"
       [ngClass]="{ 'bg-success': todo.completed, 'bg-danger': !todo.completed }"
     >
       <div>
