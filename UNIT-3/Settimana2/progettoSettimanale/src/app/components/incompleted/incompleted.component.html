@@ -1,5 +1,9 @@
 <div class="px-5 d-flex flex-column gap-4">
-  <h1 class="mt-4">Incompleted To-Dos</h1>
+  <h1
+    class="mt-4 border-bottom border-danger border-3 text-danger align-self-start"
+  >
+    INCOMPLETED TO-DOS
+  </h1>
   <h2>
     Remember: if you check the "to-do" item, it will end up on the
     <a class="btn btn-success btn-lg" [routerLink]="['/completed']"
@@ -25,7 +29,7 @@
       </div>
 
       <p class="m-0">
-        Assegnato a: {{ getUser(incompleted.userId)?.firstName }}
+        Assigned to: {{ getUser(incompleted.userId)?.firstName }}
         {{ getUser(incompleted.userId)?.lastName }}
       </p>
     </div>
