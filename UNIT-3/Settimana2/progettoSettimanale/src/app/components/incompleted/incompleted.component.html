@@ -1,0 +1,33 @@
+<div class="px-5 d-flex flex-column gap-4">
+  <h1 class="mt-4">Incompleted To-Dos</h1>
+  <h2>
+    Remember: if you check the "to-do" item, it will end up on the
+    <a class="btn btn-success btn-lg" [routerLink]="['/completed']"
+      >See how much we've accomplished!</a
+    >
+    section.
+  </h2>
+  <div *ngFor="let incompleted of incompletedToDos">
+    <div
+      class="form-check border border-black p-4 bg-danger d-flex flex-column ps-5 justify-content-center"
+    >
+      <div>
+        <input
+          (change)="onCheckboxChange($event, incompleted.id)"
+          class="form-check-input fs-4"
+          type="checkbox"
+          value="{{ incompleted.completed }}"
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label fw-bold" for="flexCheckDefault">
+          {{ incompleted.todo }}
+        </label>
+      </div>
+
+      <p class="m-0">
+        Assegnato a: {{ getUser(incompleted.userId)?.firstName }}
+        {{ getUser(incompleted.userId)?.lastName }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="px-5 d-flex flex-column gap-4">
+  <h1 class="mt-4">Completed To-Dos</h1>
+  <h2>
+    Remember: if you uncheck the "to-do" item, it will end up on the
+    <a class="btn btn-danger btn-lg" [routerLink]="['/incompleted']"
+      >What's left?</a
+    >
+    section.
+  </h2>
+  <div *ngFor="let completed of completedToDos">
+    <div
+      class="form-check border border-black p-4 d-flex flex-column ps-5 justify-content-center"
+      [ngClass]="{
+        'bg-success': completed.completed,
+        'bg-danger': !completed.completed
+      }"
+    >
+      <div>
+        <input
+          (change)="onCheckboxChange($event, completed.id)"
+          checked
+          class="form-check-input fs-4"
+          type="checkbox"
+          value="{{ completed.completed }}"
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label fw-bold" for="flexCheckDefault">
+          {{ completed.todo }}
+        </label>
+      </div>
+
+      <p class="m-0">
+        Assegnato a: {{ getUser(completed.userId)?.firstName }}
+        {{ getUser(completed.userId)?.lastName }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -21,6 +21,7 @@
               </p>
             </div>
             <button
+              [disabled]="isButtonDisabled"
               (click)="addToFavorites(product)"
               class="btn btn-danger align-self-end"
             >

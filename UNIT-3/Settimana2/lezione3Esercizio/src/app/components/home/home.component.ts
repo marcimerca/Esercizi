@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Product } from 'src/app/models/product.interface';
 import { ProductsService } from 'src/app/services/products.service';
+import { FavoriteService } from 'src/app/services/favorite.service';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +11,11 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class HomeComponent implements OnInit {
   products!: Product[];
-
-  constructor(private productsSrv: ProductsService) {}
+  isButtonDisabled: boolean = false;
+  constructor(
+    private productsSrv: ProductsService,
+    private favouriteSrv: FavoriteService
+  ) {}
 
   ngOnInit(): void {
     this.getProducts();
@@ -22,6 +27,7 @@ export class HomeComponent implements OnInit {
     });
   }
   addToFavorites(product: Product) {
-    this.productsSrv.addToFavorites(product);
+    this.favouriteSrv.addFavorite(product);
+    this.isButtonDisabled = true;
   }
 }

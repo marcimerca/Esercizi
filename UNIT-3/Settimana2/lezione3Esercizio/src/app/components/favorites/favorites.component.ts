@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Product } from 'src/app/models/product.interface';
 import { ProductsService } from 'src/app/services/products.service';
+import { FavoriteService } from 'src/app/services/favorite.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -10,19 +11,14 @@ import { Subscription } from 'rxjs';
 })
 export class FavoritesComponent implements OnInit, OnDestroy {
   myFavorites: Product[] = [];
-  private favoritesSubscription!: Subscription;
 
-  constructor(private productsService: ProductsService) {}
+  constructor(private favoriteSrv: FavoriteService) {}
 
   ngOnInit(): void {
-    this.favoritesSubscription = this.productsService.favorites$.subscribe(
-      (favorites) => {
-        this.myFavorites = favorites;
-      }
-    );
+    this.favoriteSrv.favoritesSub.subscribe((results) => {
+      this.myFavorites = results;
+    });
   }
 
-  ngOnDestroy(): void {
-    this.favoritesSubscription.unsubscribe();
-  }
+  ngOnDestroy(): void {}
 }
