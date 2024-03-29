@@ -4,7 +4,7 @@
 
 La navbar permette di navigare tra la route home,la route dei to-dos completati e quella dei to-dos non completati. E' presente, inoltre, la route degli users.
 
-Al caricamento dell'applicazione, viene visualizzato il component home, il quale contiene la lista completa di tutti i to-dos. E' stato utilizzato un array di to-dos contenuto dentro il service Todo.service.
+Al caricamento dell'applicazione, viene visualizzato il component home, il quale contiene la lista completa di tutti i to-dos.
 Quando viene fatto il "check" o l' "uncheck" su un to-do, verrà passato il suo nuovo stato "completed: true" o "completed: false" a un metodo nel service che provvede ad aggiornare la lista di to-dos con le nuove modifiche, ed esso cambierà colore, diventando verde se spuntato e rosso se deselezionato.
 
 Cliccando nella navbar il link "See how much we've accomplished!" verrà cambiata la rotta e caricato il componente che contiene i to-dos completati, mentre cliccando il link "What's left?" verrà cambiata la rotta e caricato il componente che contiene i to-dos non completati.
