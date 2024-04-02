@@ -1,0 +1,213 @@
+<div class="container text-center">
+  <h1>Registration Page</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form [formGroup]="form">
+        <div formGroupName="userInfo">
+          <div>
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              formControlName="name"
+              class="form-control"
+            />
+            <span
+              *ngIf="
+                getFormC('userInfo.name')?.invalid &&
+                getFormC('userInfo.name')?.touched
+              "
+            >
+              <ng-container *ngIf="getErrorsC('userInfo.name', 'required')"
+                ><strong class="text-danger"
+                  >Campo name obbligatorio</strong
+                ></ng-container
+              >
+              <ng-container *ngIf="getErrorsC('userInfo.name', 'minlength')"
+                ><strong class="text-danger"
+                  >Inserire almeno 5 caratteri</strong
+                >
+              </ng-container>
+            </span>
+          </div>
+          <div>
+            <label for="surname" class="form-label">Surname</label>
+            <input
+              type="text"
+              id="surname"
+              formControlName="surname"
+              class="form-control"
+            />
+            <span
+              *ngIf="
+                getFormC('userInfo.surname')?.invalid &&
+                getFormC('userInfo.surname')?.touched
+              "
+            >
+              <ng-container *ngIf="getErrorsC('userInfo.surname', 'required')"
+                ><strong class="text-danger"
+                  >Campo surname obbligatorio</strong
+                ></ng-container
+              >
+              <ng-container *ngIf="getErrorsC('userInfo.surname', 'minlength')"
+                ><strong class="text-danger"
+                  >Inserire almeno 5 caratteri</strong
+                ></ng-container
+              >
+            </span>
+          </div>
+          <div>
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              id="username"
+              formControlName="username"
+              class="form-control"
+            />
+            <span
+              *ngIf="
+                getFormC('userInfo.username')?.invalid &&
+                getFormC('userInfo.username')?.touched
+              "
+            >
+              <ng-container *ngIf="getErrorsC('userInfo.username', 'required')"
+                ><strong class="text-danger"
+                  >Campo username obbligatorio</strong
+                ></ng-container
+              >
+              <ng-container *ngIf="getErrorsC('userInfo.username', 'minlength')"
+                ><strong class="text-danger"
+                  >Inserire almeno 5 caratteri</strong
+                ></ng-container
+              >
+            </span>
+          </div>
+          <div>
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              formControlName="password"
+              class="form-control"
+            />
+            <span
+              *ngIf="
+                getFormC('userInfo.password')?.invalid &&
+                getFormC('userInfo.password')?.touched
+              "
+            >
+              <ng-container *ngIf="getErrorsC('userInfo.password', 'required')"
+                ><strong class="text-danger"
+                  >Campo password obbligatorio</strong
+                ></ng-container
+              >
+              <ng-container *ngIf="getErrorsC('userInfo.password', 'minlength')"
+                ><strong class="text-danger"
+                  >Inserire almeno 8 caratteri</strong
+                ></ng-container
+              >
+            </span>
+          </div>
+          <div>
+            <label for="confirmPassword" class="form-label"
+              >Confirm password</label
+            >
+            <input
+              type="password"
+              id="confirmPassword"
+              formControlName="confirmPassword"
+              class="form-control"
+            />
+            <span
+              *ngIf="
+                getFormC('userInfo.confirmPassword')?.invalid &&
+                getFormC('userInfo.confirmPassword')?.touched
+              "
+            >
+              <ng-container
+                *ngIf="getErrorsC('userInfo.confirmPassword', 'required')"
+                ><strong class="text-danger"
+                  >Conferma password obbligatoria</strong
+                ></ng-container
+              >
+              <ng-container
+                *ngIf="
+                  getErrorsC('userInfo.confirmPassword', 'incorrispondenza')
+                "
+                ><strong class="text-danger"
+                  >Le password non corrisponde</strong
+                ></ng-container
+              >
+            </span>
+          </div>
+          <div>
+            <label for="select" class="form-label">Select gender</label>
+            <select class="form-select" formControlName="gender">
+              <option selected value=""></option>
+              <option *ngFor="let gender of genders" [value]="gender">
+                {{ gender }}
+              </option>
+            </select>
+            <span
+              *ngIf="
+                getFormC('userInfo.gender')?.invalid &&
+                getFormC('userInfo.gender')?.touched
+              "
+            >
+              <ng-container
+                ><strong class="text-danger"
+                  >Select a gender</strong
+                ></ng-container
+              >
+            </span>
+          </div>
+        </div>
+        <div>
+          <label for="biography">Biography</label>
+          <textarea
+            name="biography"
+            id="biography"
+            class="form-control"
+            formControlName="biography"
+          ></textarea>
+          <span
+            *ngIf="
+              getFormC('biography')?.invalid && getFormC('biography')?.touched
+            "
+          >
+            <ng-container *ngIf="getErrorsC('biography', 'required')"
+              ><strong class="text-danger"
+                >Write a brief biography</strong
+              ></ng-container
+            >
+            <ng-container *ngIf="getErrorsC('biography', 'minlength')"
+              ><strong class="text-danger"
+                >Inserire almeno 20 caratteri</strong
+              ></ng-container
+            >
+          </span>
+        </div>
+        <div>
+          <label for="imgProfile" class="form-label">Insert url image</label>
+          <input
+            type="url"
+            id="imgProfile"
+            formControlName="imgProfile"
+            class="form-control"
+            placeholder="Enter image URL..."
+          />
+        </div>
+        <button
+          type="submit"
+          (click)="submit()"
+          [disabled]="form.invalid"
+          class="btn btn-success mt-3"
+        >
+          SUBMIT
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
