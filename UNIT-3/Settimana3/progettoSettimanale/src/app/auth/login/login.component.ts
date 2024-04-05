@@ -13,8 +13,11 @@ export class LoginComponent {
 
   onLogin(form: NgForm) {
     try {
-      this.authSrv.login(form.value).subscribe();
-      this.router.navigate(['/movies']);
+      this.authSrv.login(form.value).subscribe(() => {
+        setTimeout(() => {
+          this.router.navigate(['/movies']);
+        }, 1000);
+      });
     } catch (error) {
       console.error(error);
     }

@@ -16,6 +16,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { Error404Component } from './components/error404/error404.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { ProfileDetailsComponent } from './components/profile-details/profile-details.component';
 
 const routes: Route[] = [
   {
@@ -46,6 +48,16 @@ const routes: Route[] = [
     component: LoginComponent,
   },
   {
+    path: 'profile',
+    component: ProfileComponent,
+    children: [
+      {
+        path: 'details',
+        component: ProfileDetailsComponent,
+      },
+    ],
+  },
+  {
     path: '**',
     component: Error404Component,
   },
@@ -62,6 +74,8 @@ const routes: Route[] = [
     RegisterComponent,
     Error404Component,
     MovieDetailsComponent,
+    ProfileComponent,
+    ProfileDetailsComponent,
   ],
   imports: [
     BrowserModule,
