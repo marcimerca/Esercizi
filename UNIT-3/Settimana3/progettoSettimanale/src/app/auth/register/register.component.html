@@ -1,0 +1,39 @@
+<div class="container mt-3">
+  <h1 class="text-primary">Registration</h1>
+  <form #signupForm="ngForm" (ngSubmit)="onSignUp(signupForm)">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      class="form-control"
+      ngModel
+    />
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      class="form-control"
+      ngModel
+    />
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      required
+      class="form-control"
+      ngModel
+    />
+    <button
+      type="submit"
+      [disabled]="signupForm.invalid"
+      class="btn btn-primary mt-4"
+    >
+      Sign Up!
+    </button>
+  </form>
+</div>

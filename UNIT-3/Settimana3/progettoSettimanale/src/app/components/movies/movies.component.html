@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <h1 class="text-center shadow p-2">Popular Movies</h1>
+  <div class="row gy-3">
+    <div class="col-3" *ngFor="let movie of movies">
+      <div class="card h-100 shadow">
+        <img
+          src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}"
+          class="card-img-top"
+          alt="{{ movie.title }}, poster"
+          style="object-fit: cover; height: 350px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.overview.slice(0, 30) }}...</p>
+          <a [routerLink]="['/movies', movie.id]" class="btn btn-primary"
+            >Details</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

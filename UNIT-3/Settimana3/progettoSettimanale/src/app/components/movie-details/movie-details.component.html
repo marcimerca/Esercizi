@@ -1,0 +1,15 @@
+<div class="container mt-4 text-center">
+  <h1 class="text-center p-2">{{ movie.title }}</h1>
+  <div class="card h-100 text-center p-5 shadow">
+    <img
+      src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}"
+      class="card-img-top img-fluid mx-auto"
+      alt="{{ movie.title }}, poster"
+      style="width: 50%"
+    />
+    <div class="card-body">
+      <h5 class="card-subtitle">Plot</h5>
+      <p class="card-text">{{ movie.overview }}</p>
+    </div>
+  </div>
+</div>
