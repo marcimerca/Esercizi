@@ -24,7 +24,9 @@ export class AuthService {
   ) {}
 
   register(data: Register) {
-    return this.http.post(`${this.apiURL}register`, data);
+    return this.http
+      .post(`${this.apiURL}register`, data)
+      .pipe(catchError(this.errors));
   }
 
   login(data: { email: string; password: string }) {
@@ -35,7 +37,8 @@ export class AuthService {
       tap((data) => {
         this.authSub.next(data);
         localStorage.setItem('user', JSON.stringify(data));
-      })
+      }),
+      catchError(this.errors)
     );
   }
 
@@ -52,5 +55,26 @@ export class AuthService {
     }
     const user: AuthData = JSON.parse(userJson);
     this.authSub.next(user);
+  }
+
+  private errors(err: any) {
+    console.log(err.error);
+    switch (err.error) {
+      case 'Email already exists':
+        return throwError('The user already exists.');
+        break;
+
+      case 'Incorrect password':
+        return throwError('Incorrect password');
+        break;
+
+      case 'Cannot find user':
+        return throwError('User not found');
+        break;
+
+      default:
+        return throwError('Request error');
+        break;
+    }
   }
 }

@@ -12,12 +12,14 @@ export class RegisterComponent {
   constructor(private authSrv: AuthService, private router: Router) {}
 
   onSignUp(form: NgForm) {
-    try {
-      this.authSrv.register(form.value).subscribe();
-      alert('Registration completed!');
-      this.router.navigate(['/login']);
-    } catch (error) {
-      console.error(error);
-    }
+    this.authSrv.register(form.value).subscribe(
+      () => {
+        alert('Registration completed!');
+        this.router.navigate(['/login']);
+      },
+      (error) => {
+        alert(error);
+      }
+    );
   }
 }

@@ -7,7 +7,7 @@ import { AuthService } from './auth/auth.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'progettoSettimanale';
+  title = 'Movie Stream';
 
   constructor(private authSrv: AuthService) {}
 

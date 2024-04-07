@@ -12,13 +12,15 @@ export class LoginComponent {
   constructor(private authSrv: AuthService, private router: Router) {}
 
   onLogin(form: NgForm) {
-    try {
-      this.authSrv.login(form.value).subscribe(() => {
+    this.authSrv.login(form.value).subscribe(
+      () => {
         alert('Login completed!');
         this.router.navigate(['/movies']);
-      });
-    } catch (error) {
-      console.error(error);
-    }
+      },
+      (error) => {
+        alert(error);
+        console.error(error);
+      }
+    );
   }
 }

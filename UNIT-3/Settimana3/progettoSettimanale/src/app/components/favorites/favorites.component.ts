@@ -25,7 +25,7 @@ export class FavoritesComponent implements OnInit {
     this.authSrv.user$.subscribe((user: AuthData | null) => {
       this.user = user;
       if (user) {
-        this.getFavorites(Number(user.user.id)); // Chiamata per ottenere i preferiti dell'utente
+        this.getFavorites(Number(user.user.id));
       }
     });
   }
@@ -34,10 +34,8 @@ export class FavoritesComponent implements OnInit {
     this.favSrv
       .getFavoritesByUserId(userId)
       .subscribe((favorites: Favorite[]) => {
-        const movieIds = favorites.map((favorite) => favorite.movieId); // Ottieni gli ID dei film preferiti dell'utente
-        // Recupera l'elenco completo di tutti i film disponibili
+        const movieIds = favorites.map((favorite) => favorite.movieId);
         this.movieSrv.getMovies().subscribe((movies: Movie[]) => {
-          // Filtra i film preferiti dall'elenco completo dei film
           this.favoriteMovies = movies.filter((movie) =>
             movieIds.includes(movie.id)
           );

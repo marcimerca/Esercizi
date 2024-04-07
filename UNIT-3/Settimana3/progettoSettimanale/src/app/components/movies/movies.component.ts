@@ -27,13 +27,13 @@ export class MoviesComponent implements OnInit {
   ngOnInit(): void {
     this.movieSrv.getMovies().subscribe((data: Movie[]) => {
       this.movies = data;
-      this.getFavorites(); // Qui chiami getFavorites per ottenere i preferiti dell'utente
+      this.getFavorites();
     });
 
     this.authSrv.user$.subscribe((user: AuthData | null) => {
       this.user = user;
       if (user) {
-        this.getFavorites(); // Qui chiami getFavorites per ottenere i preferiti dell'utente
+        this.getFavorites();
       }
     });
   }
@@ -51,8 +51,8 @@ export class MoviesComponent implements OnInit {
           console.log(
             "ID dei film preferiti dell'utente:",
             this.favoriteMovieIds
-          ); // Console log qui
-          this.updateFavorites(); // Chiami updateFavorites dopo aver ottenuto i preferiti
+          );
+          this.updateFavorites();
         });
     }
   }
@@ -66,20 +66,18 @@ export class MoviesComponent implements OnInit {
   }
 
   toggleFavorite(movie: Movie): void {
-    const isFavorite = this.favoriteMovieIds.includes(movie.id); // Verifica se il film è nei preferiti
+    const isFavorite = this.favoriteMovieIds.includes(movie.id);
     if (isFavorite) {
-      // Se il film è già nei preferiti, rimuovilo
       const favorite = this.userFavorites.find(
         (fav) => fav.movieId === movie.id
-      ); // Trova l'oggetto favorite relativo al film corrente
+      );
       if (favorite) {
         this.favSrv.removeFromFavorites(favorite.id!).subscribe(
           () => {
-            // Aggiorna lo stato locale dei preferiti dopo la rimozione
             this.userFavorites = this.userFavorites.filter(
               (fav) => fav.id !== favorite.id
             );
-            this.getFavorites(); // Aggiorna i preferiti dopo la rimozione
+            this.getFavorites();
           },
           (error) => {
             console.error('Errore durante la rimozione del preferito:', error);
@@ -87,14 +85,13 @@ export class MoviesComponent implements OnInit {
         );
       }
     } else {
-      // Se il film non è nei preferiti, aggiungilo
       this.favSrv
         .addToFavorites({
           userId: Number(this.user?.user.id),
           movieId: movie.id,
         })
         .subscribe(() => {
-          this.getFavorites(); // Aggiorna i preferiti dopo l'aggiunta
+          this.getFavorites();
         });
     }
   }

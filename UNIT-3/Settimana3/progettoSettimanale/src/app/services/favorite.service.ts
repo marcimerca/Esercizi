@@ -35,15 +35,12 @@ export class FavoriteService {
   }
 
   toggleFavorite(userId: number, movieId: number) {
-    // Verifica se il film è già tra i preferiti
     return this.getFavoritesByUserId(userId).pipe(
       switchMap((favorites: Favorite[]) => {
         const favorite = favorites.find((fav) => fav.movieId === movieId);
         if (favorite) {
-          // Se il film è già nei preferiti, rimuovilo
           return this.removeFromFavorites(favorite.id!);
         } else {
-          // Se il film non è nei preferiti, aggiungilo
           return this.addToFavorites({ userId, movieId });
         }
       })
