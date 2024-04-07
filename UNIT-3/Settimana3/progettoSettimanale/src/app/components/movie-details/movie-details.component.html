@@ -7,9 +7,14 @@
       alt="{{ movie.title }}, poster"
       style="width: 50%"
     />
-    <div class="card-body">
+    <div class="card-body" *ngIf="movie.overview.length > 0; else elseTemplate">
       <h5 class="card-subtitle">Plot</h5>
-      <p class="card-text">{{ movie.overview }}</p>
+      <p class="card-text">
+        {{ movie.overview }}
+      </p>
     </div>
+    <ng-template #elseTemplate>
+      <p>Plot non available...</p>
+    </ng-template>
   </div>
 </div>

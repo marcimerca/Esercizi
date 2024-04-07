@@ -11,7 +11,10 @@
         />
         <div class="card-body">
           <h5 class="card-title">{{ favoriteMovie.title }}</h5>
-          <p>{{ favoriteMovie.overview }}</p>
+          <p *ngIf="favoriteMovie.overview.length > 0; else elseTemplate">
+            {{ favoriteMovie.overview }}
+          </p>
+          <ng-template #elseTemplate>Plot non available..</ng-template>
         </div>
       </div>
     </div>
