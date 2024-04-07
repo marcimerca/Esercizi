@@ -18,6 +18,7 @@ import { Error404Component } from './components/error404/error404.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ProfileDetailsComponent } from './components/profile-details/profile-details.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
 
 const routes: Route[] = [
   {
@@ -55,6 +56,10 @@ const routes: Route[] = [
         path: 'details',
         component: ProfileDetailsComponent,
       },
+      {
+        path: 'favorites',
+        component: FavoritesComponent,
+      },
     ],
   },
   {
@@ -76,6 +81,7 @@ const routes: Route[] = [
     MovieDetailsComponent,
     ProfileComponent,
     ProfileDetailsComponent,
+    FavoritesComponent,
   ],
   imports: [
     BrowserModule,

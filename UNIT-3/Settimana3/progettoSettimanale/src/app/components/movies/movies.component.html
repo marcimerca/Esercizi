@@ -22,7 +22,17 @@
             >Details</a
           >
         </div>
+        <button class="btn btn-outline-danger">
+          <i class="bi bi-heart-fill"></i>
+        </button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- (click)="toggleFavorite(movie.id)"
+          *ngIf="user"
+          [ngClass]="{
+            'btn-outline-danger': !isMovieInFavorites(movie.id),
+            'btn-outline-success': isMovieInFavorites(movie.id)
+          }" -->
