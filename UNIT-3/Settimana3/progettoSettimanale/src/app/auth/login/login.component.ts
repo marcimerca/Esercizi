@@ -14,9 +14,8 @@ export class LoginComponent {
   onLogin(form: NgForm) {
     try {
       this.authSrv.login(form.value).subscribe(() => {
-        setTimeout(() => {
-          this.router.navigate(['/movies']);
-        }, 1000);
+        alert('Login completed!');
+        this.router.navigate(['/movies']);
       });
     } catch (error) {
       console.error(error);

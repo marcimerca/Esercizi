@@ -75,6 +75,10 @@ export class MoviesComponent implements OnInit {
       if (favorite) {
         this.favSrv.removeFromFavorites(favorite.id!).subscribe(
           () => {
+            // Aggiorna lo stato locale dei preferiti dopo la rimozione
+            this.userFavorites = this.userFavorites.filter(
+              (fav) => fav.id !== favorite.id
+            );
             this.getFavorites(); // Aggiorna i preferiti dopo la rimozione
           },
           (error) => {

@@ -1,1 +1,19 @@
-<p>favorites works!</p>
+<div class="container mt-4">
+  <h2 class="text-center shadow-sm p-2">Your Favorites Movies</h2>
+  <div class="row gy-3">
+    <div class="col-4" *ngFor="let favoriteMovie of favoriteMovies">
+      <div class="card h-100 shadow">
+        <img
+          src="https://image.tmdb.org/t/p/w500/{{ favoriteMovie.poster_path }}"
+          class="card-img-top"
+          alt="{{ favoriteMovie.title }}, poster"
+          style="object-fit: cover; height: 350px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ favoriteMovie.title }}</h5>
+          <p>{{ favoriteMovie.overview }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

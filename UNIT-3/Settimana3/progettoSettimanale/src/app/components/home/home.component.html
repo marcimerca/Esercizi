@@ -1,5 +1,23 @@
-<div class="container text-center">
-  <h1>MOVIE STREAM</h1>
+<div *ngIf="user; else otherTemplate">
+  <div class="container text-center">
+    <h1>MOVIE STREAM</h1>
+    <h2>
+      Welcome back <span class="text-primary">{{ user.user.name }}</span
+      >!
+    </h2>
+    <h2>
+      Feel free to click through the links in the navigation bar and make the
+      most of our site's features.
+    </h2>
+    <img
+      width="50%"
+      src="https://cdn.pixabay.com/photo/2015/12/09/17/12/popcorn-1085072_1280.jpg"
+      alt="pop-corn"
+    />
+  </div>
+</div>
+<ng-template class="container text-center" #otherTemplate>
+  <h1 class="text-center">MOVIE STREAM</h1>
   <h2>
     Welcome to our site! To use our services, log in or register if you haven't
     done so yet!
@@ -8,4 +26,4 @@
     <a class="btn btn-success" [routerLink]="['/login']">Login</a
     ><a class="btn btn-primary" [routerLink]="['/register']">Register</a>
   </div>
-</div>
+</ng-template>

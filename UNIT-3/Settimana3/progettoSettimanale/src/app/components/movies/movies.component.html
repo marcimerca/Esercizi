@@ -5,14 +5,24 @@
   </button>
 </div>
 <div class="container mt-4">
-  <h1 class="text-center shadow-sm p-2">Popular Movies</h1>
-  <h4 class="rounded shadow p-2">
+  <h1 class="text-center shadow-sm p-2">
+    <i class="bi bi-film me-1"></i> Popular Movies
+    <i class="bi bi-film ms-1"></i>
+  </h1>
+  <div class="rounded shadow p-2 mb-4">
+    <h4>Info:</h4>
+
+    You can add/remove a movie to/from your favorites by clicking on the button:
+    <i class="bi bi-heart-fill text-danger"></i> /
     <i class="bi bi-heart-fill text-success"></i>
-    Suggests that the movie has been added to the favorites list.
+
     <br />
     <i class="bi bi-heart-fill text-danger"></i>
     Shows that the movie is currently not added to the favorites list.
-  </h4>
+    <br />
+    <i class="bi bi-heart-fill text-success"></i>
+    Suggests that the movie has been added to the favorites list.
+  </div>
   <div class="row gy-3">
     <div class="col-3" *ngFor="let movie of movies">
       <div class="card h-100 shadow">

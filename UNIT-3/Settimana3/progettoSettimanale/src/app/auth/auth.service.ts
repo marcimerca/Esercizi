@@ -6,6 +6,7 @@ import { BehaviorSubject, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { AuthData } from '../models/auth-data.interface';
 import { Router } from '@angular/router';
+import { FavoriteService } from '../services/favorite.service';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,11 @@ export class AuthService {
   private authSub = new BehaviorSubject<AuthData | null>(null);
   user$ = this.authSub.asObservable();
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+    private favSrv: FavoriteService
+  ) {}
 
   register(data: Register) {
     return this.http.post(`${this.apiURL}register`, data);

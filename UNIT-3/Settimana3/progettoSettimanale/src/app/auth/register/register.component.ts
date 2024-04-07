@@ -14,7 +14,8 @@ export class RegisterComponent {
   onSignUp(form: NgForm) {
     try {
       this.authSrv.register(form.value).subscribe();
-      this.router.navigate(['/']);
+      alert('Registration completed!');
+      this.router.navigate(['/login']);
     } catch (error) {
       console.error(error);
     }

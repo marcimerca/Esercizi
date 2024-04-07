@@ -17,14 +17,27 @@
       "password": "$2a$10$u0EMDipBJntdT0BrUiATTeCmf2Eqa0BQ7O6O0yZ6BrNaxyjXFeNlW",
       "name": "Marcello Mercanzin",
       "id": 4
+    },
+    {
+      "email": "calcutta@gmail.com",
+      "password": "$2a$10$wjdXvF9iJXTvFlwygrvyNOYcLp/n2LM48xWiYBV6vbwBwVzZDdckC",
+      "name": "Calcutta",
+      "id": 5
+    },
+    {
+      "email": "giroud@gmail.com",
+      "password": "$2a$10$ypCK97dDE1l1MlbYr7ekGOGt.fD4l/8aBo2xRWZELDIwkXYc82.be",
+      "name": "Olivier Giroud",
+      "id": 6
+    },
+    {
+      "email": "sinner@gmail.com",
+      "password": "$2a$10$PPSbyPTEae1vVZZtGY0ZBuGbBjpzoplwbK5I2ayiDu9gzvrunYyc2",
+      "name": "Jannik Sinner",
+      "id": 7
     }
   ],
   "favorites": [
-    {
-      "userId": 2,
-      "movieId": 460465,
-      "id": 6
-    },
     {
       "userId": 3,
       "movieId": 804435,
@@ -37,28 +50,43 @@
     },
     {
       "userId": 2,
-      "movieId": 567189,
-      "id": 26
-    },
-    {
-      "userId": 2,
-      "movieId": 615457,
-      "id": 27
-    },
-    {
-      "userId": 2,
-      "movieId": 578701,
-      "id": 28
-    },
-    {
-      "userId": 2,
       "movieId": 399566,
       "id": 30
     },
     {
+      "userId": 4,
+      "movieId": 791373,
+      "id": 32
+    },
+    {
       "userId": 2,
-      "movieId": 578701,
-      "id": 31
+      "movieId": 811367,
+      "id": 33
+    },
+    {
+      "userId": 4,
+      "movieId": 567189,
+      "id": 34
+    },
+    {
+      "userId": 4,
+      "movieId": 460465,
+      "id": 35
+    },
+    {
+      "userId": 7,
+      "movieId": 527774,
+      "id": 36
+    },
+    {
+      "userId": 7,
+      "movieId": 567189,
+      "id": 37
+    },
+    {
+      "userId": 7,
+      "movieId": 460465,
+      "id": 38
     }
   ],
   "genres": [
