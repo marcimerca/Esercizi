@@ -46,4 +46,9 @@
 
 - Info: il progetto è nella cartella UNIT-3/Settimana2/progettoSettimanale e nella cartella del progetto nel readMe c'è la descrizione del progetto.
 
+## SETTIMANA 3 - PROGETTO Angular (Movie)
+
+- Info: il progetto è nella cartella UNIT-3/Settimana3/progettoSettimanale.
+
+
 
